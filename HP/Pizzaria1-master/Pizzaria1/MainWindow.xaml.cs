@@ -44,16 +44,15 @@ namespace Pizzaria1
             {
                 case 0:
                     GridPrincipal.Children.Clear();
-                    GridPrincipal.Children.Add(new UserControlInicio());
+                    GridPrincipal.Children.Add(new MainDashboard());
                     break;
                 case 1:
                     GridPrincipal.Children.Clear();
-                    GridPrincipal.Children.Add(new UserControlEscolha());
+                    GridPrincipal.Children.Add(new ToDolist());
                     break;
                 case 2:
                     GridPrincipal.Children.Clear();
-                    MessageBox.Show("Daily Work Screen.");
-                    GridPrincipal.Children.Add(new DailyWork());
+                    GridPrincipal.Children.Add(new Goal());
                     break;
                 case 3:
                     GridPrincipal.Children.Clear();

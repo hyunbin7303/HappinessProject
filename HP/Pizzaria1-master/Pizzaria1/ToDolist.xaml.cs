@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interaction logic for DailyWork.xaml
+    /// Interação lógica para UserControlEscolha.xam
     /// </summary>
-    public partial class DailyWork : UserControl
+    public partial class ToDolist : UserControl
     {
-        public DailyWork()
+        public ToDolist()
         {
             InitializeComponent();
         }

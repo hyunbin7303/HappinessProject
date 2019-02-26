@@ -18,9 +18,9 @@ namespace Pizzaria1
     /// <summary>
     /// Interação lógica para UserControlInicio.xam
     /// </summary>
-    public partial class UserControlInicio : UserControl
+    public partial class MainDashboard : UserControl
     {
-        public UserControlInicio()
+        public MainDashboard()
         {
             InitializeComponent();
         }

@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interação lógica para UserControlEscolha.xam
+    /// Interaction logic for GoalSetting.xaml
     /// </summary>
-    public partial class UserControlEscolha : UserControl
+    public partial class GoalSetting : Window
     {
-        public UserControlEscolha()
+        public GoalSetting()
         {
             InitializeComponent();
         }

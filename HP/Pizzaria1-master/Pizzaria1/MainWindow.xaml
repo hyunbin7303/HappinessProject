@@ -52,19 +52,19 @@
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FoodForkDrink" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="TODAY REPORT" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Today Report" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="SOMETHING" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="My Goal" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="TruckDelivery" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="LET" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="My friends" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
@@ -76,7 +76,7 @@
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="AccountStar" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="HEY" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Progress" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
             </ListView>

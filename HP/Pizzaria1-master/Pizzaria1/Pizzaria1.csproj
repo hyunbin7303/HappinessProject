@@ -62,16 +62,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DailyWork.xaml.cs">
-      <DependentUpon>DailyWork.xaml</DependentUpon>
+    <Compile Include="Goal.xaml.cs">
+      <DependentUpon>Goal.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControlEscolha.xaml.cs">
-      <DependentUpon>UserControlEscolha.xaml</DependentUpon>
+    <Compile Include="GoalSetting.xaml.cs">
+      <DependentUpon>GoalSetting.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControlInicio.xaml.cs">
-      <DependentUpon>UserControlInicio.xaml</DependentUpon>
+    <Compile Include="ToDolist.xaml.cs">
+      <DependentUpon>ToDolist.xaml</DependentUpon>
     </Compile>
-    <Page Include="DailyWork.xaml">
+    <Compile Include="MainDashboard.xaml.cs">
+      <DependentUpon>MainDashboard.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Goal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GoalSetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -87,11 +94,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControlEscolha.xaml">
+    <Page Include="ToDolist.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControlInicio.xaml">
+    <Page Include="MainDashboard.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -128,6 +135,9 @@
     <Resource Include="Assets\Pizza-doce-de-Brigadeiro.jpg" />
     <Resource Include="Assets\pizzabar.jpg" />
     <Resource Include="Assets\size_960_16_9_pizza2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\bboying.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
