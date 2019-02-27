@@ -58,13 +58,14 @@
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="FormatListBulleted" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="My Goal" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="My Goals" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="HumanGreeting" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="My friends" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">
@@ -75,7 +76,7 @@
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="AccountStar" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="ProgressCheck" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Progress" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
