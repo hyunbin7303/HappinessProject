@@ -62,11 +62,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Breakdance.cs">
+    <Compile Include="PrioritySetup.xaml.cs">
+      <DependentUpon>PrioritySetup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrivateSetting.xaml.cs">
+      <DependentUpon>PrivateSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreTracker.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Breakdance.Designer.cs">
-      <DependentUpon>Breakdance.cs</DependentUpon>
+    <Compile Include="ScoreTracker.Designer.cs">
+      <DependentUpon>ScoreTracker.cs</DependentUpon>
     </Compile>
     <Compile Include="Detail.xaml.cs">
       <DependentUpon>Detail.xaml</DependentUpon>
@@ -77,8 +83,8 @@
     <Compile Include="Goal.xaml.cs">
       <DependentUpon>Goal.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GoalSetting.xaml.cs">
-      <DependentUpon>GoalSetting.xaml</DependentUpon>
+    <Compile Include="FriendSetting.xaml.cs">
+      <DependentUpon>FriendSetting.xaml</DependentUpon>
     </Compile>
     <Compile Include="HP_Singleton.cs" />
     <Compile Include="Options.xaml.cs">
@@ -87,11 +93,18 @@
     <Compile Include="Progress.xaml.cs">
       <DependentUpon>Progress.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ScoreEvaluation.cs" />
     <Compile Include="ToDolist.xaml.cs">
       <DependentUpon>ToDolist.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainDashboard.xaml.cs">
       <DependentUpon>MainDashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Julio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Julio.Designer.cs">
+      <DependentUpon>UC_Julio.cs</DependentUpon>
     </Compile>
     <Page Include="Detail.xaml">
       <SubType>Designer</SubType>
@@ -105,7 +118,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GoalSetting.xaml">
+    <Page Include="FriendSetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,6 +135,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrioritySetup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrivateSetting.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,12 +173,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Breakdance.resx">
-      <DependentUpon>Breakdance.cs</DependentUpon>
+    <EmbeddedResource Include="ScoreTracker.resx">
+      <DependentUpon>ScoreTracker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Julio.resx">
+      <DependentUpon>UC_Julio.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -176,6 +200,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\bboying.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\programming.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

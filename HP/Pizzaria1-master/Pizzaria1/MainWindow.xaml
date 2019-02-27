@@ -12,9 +12,7 @@
             <Grid Margin="5">
                 <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
                     <TextBlock Text="HAPPINESS PROJECT" VerticalAlignment="Center" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="20 0"/>
-                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
-                        <materialDesign:PackIcon Kind="FacebookBox"/>
-                    </Button>
+
                     <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
                         <materialDesign:PackIcon Kind="TwitterBox"/>
                     </Button>
@@ -24,8 +22,8 @@
                     <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray">
                         <materialDesign:PackIcon Kind="BellOutline"/>
                     </Button>
-                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="0 0 10 0">
-                        <materialDesign:PackIcon Kind="Settings"/>
+                    <Button Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Margin="0 0 10 0" Click="Button_Click">
+                        <materialDesign:PackIcon Kind="Settings" RenderTransformOrigin="0.5,0.5"/>
                     </Button>
                     <Button x:Name="ButtonFechar" Width="30" Height="30" Background="{x:Null}" BorderBrush="{x:Null}" Padding="0" Foreground="Gray" Click="ButtonFechar_Click">
                         <materialDesign:PackIcon Kind="Power"/>
@@ -71,7 +69,7 @@
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
                         <materialDesign:PackIcon Kind="Cash" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
-                        <TextBlock Text="YO" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
+                        <TextBlock Text="Priority" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
                 <ListViewItem Height="60">

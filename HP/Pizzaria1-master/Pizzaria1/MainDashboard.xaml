@@ -8,22 +8,25 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              Height="auto" Width="auto">
     <Grid>
-        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="280"/>
+        </Grid.ColumnDefinitions>
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}" HorizontalAlignment="Left" Margin="2,6,-3.6,-6.8" Width="480" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" Background="AliceBlue" Margin="0,0,-127,0">
                 <StackPanel>
                     <TextBlock Text="February 26th, 2019" FontFamily="Cooper Black" Foreground="#FFC00000"/>
-                    <StackPanel Margin="10">
+                    <StackPanel Margin="5">
                         <TextBlock Text="Breakdance Practice" FontSize="20" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                         <TextBlock Text="Handstand 30 mins" FontSize="20" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"/>
                         <TextBlock Text="Achievement" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
-                        <TextBlock FontSize="18" Width="250" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap">
-                            TESTING PURPOSE
-                        </TextBlock>
+                        <TextBlock FontSize="18" Width="250" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap" Text="Workload : 75%"/>
                     </StackPanel>
-                    <Button FontFamily="Champagne &amp; Limousines" Content="See Detail" FontSize="18" Margin="25" Click="Btn_Detail"/>
+                    <Button FontFamily="Champagne &amp; Limousines" Content="See Detail" FontSize="18" Margin="5" Click="Btn_Detail" Width="230"/>
                 </StackPanel>
-                <Image Margin="10" Width="180" Height="150" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>
+                <Image Margin="10" Width="160" Height="160" Source="Assets/bboying.jpg" Stretch="UniformToFill"/>
             </StackPanel>
+            
         </materialDesign:TransitioningContent>
     </Grid>
 </UserControl>

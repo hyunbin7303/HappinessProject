@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Pizzaria1
 {
-    public partial class Breakdance : Form
+    public partial class UC_Julio : UserControl
     {
-        public Breakdance()
+        public UC_Julio()
         {
             InitializeComponent();
         }

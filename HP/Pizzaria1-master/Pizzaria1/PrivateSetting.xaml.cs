@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interação lógica para UserControlInicio.xam
+    /// Interaction logic for PrivateSetting.xaml
     /// </summary>
-    public partial class MainDashboard : UserControl
+    public partial class PrivateSetting : UserControl
     {
-        public MainDashboard()
+        public PrivateSetting()
         {
             InitializeComponent();
-        }
-
-        private void Btn_Detail(object sender, RoutedEventArgs e)
-        {
-            ScoreTracker breakdance = new ScoreTracker();
-            breakdance.Show();
         }
     }
 }

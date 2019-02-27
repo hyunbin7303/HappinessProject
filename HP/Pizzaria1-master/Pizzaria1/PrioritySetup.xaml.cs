@@ -10,23 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interaction logic for GoalSetting.xaml
+    /// Interaction logic for PrioritySetup.xaml
     /// </summary>
-    public partial class GoalSetting
+    public partial class PrioritySetup : UserControl
     {
-        public GoalSetting()
+        public PrioritySetup()
         {
             InitializeComponent();
-        }
-
-        private void Btn_Lab1_Click(object sender, RoutedEventArgs e)
-        {
-            this.tabControl.SelectedIndex = 1;
         }
     }
 }

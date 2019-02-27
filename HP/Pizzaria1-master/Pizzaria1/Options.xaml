@@ -10,9 +10,6 @@
         <StackPanel>
             <Button Click="Button_Click_1" Content="HEY" HorizontalAlignment="Center"></Button>
             <Button Click="Button_Click_2" Content="Hey2" HorizontalAlignment="Center"></Button>
-            <Button>Button 3</Button>
-            <Button>Button 4</Button>
-            <Button>Button 5</Button>
         </StackPanel>
          <DockPanel Height="300" LastChildFill="False"/>
     </Grid>

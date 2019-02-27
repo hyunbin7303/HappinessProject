@@ -10,25 +10,31 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interação lógica para UserControlInicio.xam
+    /// Interaction logic for GoalSetting.xaml
     /// </summary>
-    public partial class MainDashboard : UserControl
+    public partial class FriendSetting
     {
-        public MainDashboard()
+        public FriendSetting()
         {
             InitializeComponent();
         }
 
-        private void Btn_Detail(object sender, RoutedEventArgs e)
+        private void Btn_Lab1_Click(object sender, RoutedEventArgs e)
         {
-            ScoreTracker breakdance = new ScoreTracker();
-            breakdance.Show();
+            this.tabControl.SelectedIndex = 1;
+        }
+
+        private void Btn_Next_Click(object sender, RoutedEventArgs e)
+        {
+            this.tabControl.SelectedIndex = 2;
+            UC_Julio uC_Julio = new UC_Julio();
+           
+
         }
     }
 }

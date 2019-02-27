@@ -41,19 +41,20 @@ namespace Pizzaria1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-         //   Visibility = Visibility.Collapsed;
-            GridPrincipal2.Children.Clear();
-         //   GridPrincipal2.Children.Add(FirstTask.Instance);
+            ScoreTracker breakdance = new ScoreTracker();
+            breakdance.Show();
         }
 
         private void Btn_Second(object sender, RoutedEventArgs e)
         {
-
+            ScoreTracker programming = new ScoreTracker();
+            programming.Show();
         }
 
         private void Btn_Third(object sender, RoutedEventArgs e)
         {
-
+            ScoreTracker reading = new ScoreTracker();
+            reading.Show();
         }
     }
 }

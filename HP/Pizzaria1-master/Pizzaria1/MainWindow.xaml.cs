@@ -56,10 +56,11 @@ namespace Pizzaria1
                     break;
                 case 3:
                     GridPrincipal.Children.Clear();
-                    GridPrincipal.Children.Add(new GoalSetting());
+                    GridPrincipal.Children.Add(new FriendSetting());
                     break;
                 case 4:
                     GridPrincipal.Children.Clear();
+                    GridPrincipal.Children.Add(new PrioritySetup());
                     break;
                 case 5:
                     GridPrincipal.Children.Clear();
@@ -74,6 +75,12 @@ namespace Pizzaria1
         {
             //TrainsitionigContentSlide.OnApplyTemplate();
             GridCursor.Margin = new Thickness(0, (100 + (60 * index)), 0, 0);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            GridPrincipal.Children.Clear();
+            GridPrincipal.Children.Add(new PrivateSetting());
         }
     }
 }
