@@ -20,9 +20,40 @@ namespace Pizzaria1
     /// </summary>
     public partial class ToDolist : UserControl
     {
+        private static ToDolist _toDolist;
+        public static ToDolist Instance
+        {
+            get
+            {
+                if(_toDolist == null)
+                {
+                    _toDolist = new ToDolist();
+                }
+                return _toDolist;
+            }
+        }
+
+
         public ToDolist()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+         //   Visibility = Visibility.Collapsed;
+            GridPrincipal2.Children.Clear();
+         //   GridPrincipal2.Children.Add(FirstTask.Instance);
+        }
+
+        private void Btn_Second(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Btn_Third(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

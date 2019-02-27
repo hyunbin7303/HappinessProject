@@ -9,20 +9,27 @@
              Height="auto" Width="auto">
     <Grid>
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
+                <StackPanel>
+                    <TextBlock Text="Main Priority" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Main Goal" FontSize="50" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                        <TextBlock FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"><Run Text="Every day Gym"/><LineBreak/><Run/></TextBlock>
+                        <TextBlock Text="YOYOYOYO" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
+                        <TextBlock FontSize="18" Width="400" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap"/>
+                    </StackPanel>
+                    <Button FontFamily="Champagne &amp; Limousines" Content="Start" FontSize="15" Margin="25"/>
+                </StackPanel>
                 <StackPanel>
                     <TextBlock Text="Daily WOrk" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                     <StackPanel Margin="10">
-                        <TextBlock Text="PRICE????" FontSize="50" FontFamily="Cooper Black" Foreground="#FFC00000"/>
-                        <TextBlock Text="HEYY" FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"/>
-                        <TextBlock Text="YOYOYOYO" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
-                        <TextBlock FontSize="18" Width="250" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap">
-                            Hi My nAME IS kEVIN.
-                        </TextBlock>
+                        <TextBlock Text="Main Goal" FontSize="50" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                        <TextBlock FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"><Run Text="Every day Gym"/><LineBreak/><Run/></TextBlock>
+                        <TextBlock Text="" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
+                        <TextBlock FontSize="18" Width="400" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap"/>
+                        <Button FontFamily="Champagne &amp; Limousines" Content="Start" FontSize="15" Margin="25"/>
                     </StackPanel>
-                    <Button FontFamily="Champagne &amp; Limousines" Content="Pedir Agora" FontSize="18" Margin="25"/>
                 </StackPanel>
-                <Image Margin="10" Width="200" Height="200" Source="Assets/09-calabrese-tradizionale.jpg" Stretch="UniformToFill"/>
             </StackPanel>
         </materialDesign:TransitioningContent>
     </Grid>

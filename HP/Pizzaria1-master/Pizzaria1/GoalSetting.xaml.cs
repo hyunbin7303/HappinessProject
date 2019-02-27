@@ -17,11 +17,16 @@ namespace Pizzaria1
     /// <summary>
     /// Interaction logic for GoalSetting.xaml
     /// </summary>
-    public partial class GoalSetting : Window
+    public partial class GoalSetting
     {
         public GoalSetting()
         {
             InitializeComponent();
+        }
+
+        private void Btn_Lab1_Click(object sender, RoutedEventArgs e)
+        {
+            this.tabControl.SelectedIndex = 1;
         }
     }
 }

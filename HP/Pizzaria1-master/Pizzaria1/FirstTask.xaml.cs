@@ -16,19 +16,27 @@ using System.Windows.Shapes;
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interação lógica para UserControlInicio.xam
+    /// Interaction logic for FirstTask.xaml
     /// </summary>
-    public partial class MainDashboard : UserControl
+    public partial class FirstTask : UserControl
     {
-        public MainDashboard()
+
+        private static FirstTask _instance;
+        public static FirstTask Instance
         {
-            InitializeComponent();
+            get
+            {
+                if(_instance == null)
+                {
+                    _instance = new FirstTask();
+                }
+                return _instance;
+            }
         }
 
-        private void Btn_Detail(object sender, RoutedEventArgs e)
+        public FirstTask()
         {
-            Breakdance breakdance = new Breakdance();
-            breakdance.Show();
+            InitializeComponent();
         }
     }
 }

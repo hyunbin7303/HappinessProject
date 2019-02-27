@@ -16,19 +16,29 @@ using System.Windows.Shapes;
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interação lógica para UserControlInicio.xam
+    /// Interaction logic for Options.xaml
     /// </summary>
-    public partial class MainDashboard : UserControl
+    public partial class Options : UserControl
     {
-        public MainDashboard()
+        public Options()
         {
             InitializeComponent();
         }
 
-        private void Btn_Detail(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Breakdance breakdance = new Breakdance();
-            breakdance.Show();
+            
+                
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

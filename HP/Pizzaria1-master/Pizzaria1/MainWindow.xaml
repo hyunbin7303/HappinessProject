@@ -51,7 +51,7 @@
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="FoodForkDrink" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="Hops" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="Today Report" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>
@@ -63,7 +63,7 @@
                 </ListViewItem>
                 <ListViewItem Height="60">
                     <StackPanel Orientation="Horizontal">
-                        <materialDesign:PackIcon Kind="TruckDelivery" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
+                        <materialDesign:PackIcon Kind="HumanGreeting" Width="30" Height="30" VerticalAlignment="Center" Margin="5"/>
                         <TextBlock Text="My friends" FontSize="17" VerticalAlignment="Center" Margin="20 0"/>
                     </StackPanel>
                 </ListViewItem>

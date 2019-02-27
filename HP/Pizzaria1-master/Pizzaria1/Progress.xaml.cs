@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interação lógica para UserControlInicio.xam
+    /// Interaction logic for Progress.xaml
     /// </summary>
-    public partial class MainDashboard : UserControl
+    public partial class Progress : Window
     {
-        public MainDashboard()
+        public Progress()
         {
             InitializeComponent();
-        }
-
-        private void Btn_Detail(object sender, RoutedEventArgs e)
-        {
-            Breakdance breakdance = new Breakdance();
-            breakdance.Show();
         }
     }
 }

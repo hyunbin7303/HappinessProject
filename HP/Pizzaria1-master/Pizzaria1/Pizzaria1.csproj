@@ -62,11 +62,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Breakdance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Breakdance.Designer.cs">
+      <DependentUpon>Breakdance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Detail.xaml.cs">
+      <DependentUpon>Detail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FirstTask.xaml.cs">
+      <DependentUpon>FirstTask.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Goal.xaml.cs">
       <DependentUpon>Goal.xaml</DependentUpon>
     </Compile>
     <Compile Include="GoalSetting.xaml.cs">
       <DependentUpon>GoalSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HP_Singleton.cs" />
+    <Compile Include="Options.xaml.cs">
+      <DependentUpon>Options.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Progress.xaml.cs">
+      <DependentUpon>Progress.xaml</DependentUpon>
     </Compile>
     <Compile Include="ToDolist.xaml.cs">
       <DependentUpon>ToDolist.xaml</DependentUpon>
@@ -74,6 +93,14 @@
     <Compile Include="MainDashboard.xaml.cs">
       <DependentUpon>MainDashboard.xaml</DependentUpon>
     </Compile>
+    <Page Include="Detail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FirstTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Goal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -94,6 +121,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Options.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Progress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ToDolist.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,6 +152,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Breakdance.resx">
+      <DependentUpon>Breakdance.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
