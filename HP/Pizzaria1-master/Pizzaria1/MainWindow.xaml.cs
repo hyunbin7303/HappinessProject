@@ -64,7 +64,7 @@ namespace Pizzaria1
                     break;
                 case 5:
                     GridPrincipal.Children.Clear();
-                    GridPrincipal.Children.Add(new Options());
+                    GridPrincipal.Children.Add(new Progress());
                     break;
                 default:
                     break;

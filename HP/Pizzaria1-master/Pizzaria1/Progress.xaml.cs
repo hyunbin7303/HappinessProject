@@ -17,11 +17,37 @@ namespace Pizzaria1
     /// <summary>
     /// Interaction logic for Progress.xaml
     /// </summary>
-    public partial class Progress : Window
+    public partial class Progress : UserControl
     {
         public Progress()
         {
             InitializeComponent();
+        }
+        internal class ProgressInfo
+        {
+            public string KEVINPARK { get; private set; }
+            public int Percentage { get; private set; }
+
+            public ProgressInfo()
+            {
+                KEVINPARK = "aaaaaaaaaaaaaaaaaaaaa";
+                Percentage = CalcularPorcentagem();
+            }
+
+            private int CalcularPorcentagem()
+            {
+                return 50; //Calculo da porcentagem de consumo
+            }
+        }
+        internal class ProgressViewModel
+        {
+            public List<ProgressInfo> ProgressInfoList { get; private set; }
+
+            public ProgressViewModel(ProgressInfo consumo)
+            {
+                ProgressInfoList = new List<ProgressInfo>();
+                ProgressInfoList.Add(consumo);
+            }
         }
     }
 }
