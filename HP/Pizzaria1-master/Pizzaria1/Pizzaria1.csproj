@@ -230,5 +230,8 @@
     <Resource Include="Assets\quote1.jpg" />
     <Resource Include="Assets\workout.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\graph.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
