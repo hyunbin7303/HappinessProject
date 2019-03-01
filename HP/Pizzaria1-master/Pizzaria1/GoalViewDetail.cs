@@ -16,6 +16,8 @@ namespace Pizzaria1
         {
             InitializeComponent();
             this.BackColor = Color.LightBlue;
+            txt_StartDate.Text = HP_Singleton.Instance.privateInfo.StartDate.ToLongDateString();
+            txt_EndDate.Text = HP_Singleton.Instance.privateInfo.EndDate.ToLongDateString();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -41,6 +43,10 @@ namespace Pizzaria1
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void txt_StartDate_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

@@ -24,9 +24,9 @@
                     </StackPanel>
                 </StackPanel>
                 <StackPanel>
-                    <TextBlock Text="Daily Work" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <TextBlock Text="Daily Work" FontFamily="Cooper Black" Foreground="#FFC00000" Margin="5,50,0,0"/>
                     <StackPanel Margin="10">
-                        <TextBlock Text="Push-up 40 mins" FontSize="39" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                        <TextBlock Text="Push-up 100 times" FontSize="39" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                         <TextBlock FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"><Run Text="Every day Gym"/><LineBreak/><Run/></TextBlock>
                         <TextBlock FontSize="18" Width="400" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap"/>
                         <StackPanel Orientation="Horizontal">

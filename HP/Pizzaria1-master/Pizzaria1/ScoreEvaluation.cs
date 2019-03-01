@@ -30,4 +30,11 @@ namespace Pizzaria1
             return overall;
         }
     }
+    public class PrivateInfo
+    {
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
+        public List<string> TakingCourseName { get; set; }
+
+    }
 }

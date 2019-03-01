@@ -15,8 +15,8 @@
                     <RowDefinition Height="132"/>
                     <RowDefinition Height="132"/>
                 </Grid.RowDefinitions>
-                <Rectangle Grid.Row="0" Fill="#FFF4F4F5" RadiusY="15" RadiusX="15" Stroke="Black" Margin="34,18,34,18"/>
-                <Rectangle Grid.Row="1" Fill="#FFF4F4F5" RadiusY="15" RadiusX="15" Stroke="Black" Margin="34,18,34,18"/>
+                <Rectangle Grid.Row="0" Fill="#FFF4F4F5" RadiusY="15" RadiusX="15" Stroke="Black" Margin="34,18,34,18" MouseDown="Rectangle_MouseDown"/>
+                <Rectangle Grid.Row="1" Fill="#FFF4F4F5" RadiusY="15" RadiusX="15" Stroke="Black" Margin="34,18,34,18" MouseDown="Rectangle_MouseDown_1"/>
                 <Rectangle Grid.Row="2" Fill="#FFF4F4F5" RadiusY="15" RadiusX="15" Stroke="Black" Margin="34,18,34,18"/>
 
                 <TextBlock HorizontalAlignment="Left" Margin="275,59,0,0" TextWrapping="Wrap" Text="Breakdance Practice" FontSize="16" FontFamily="Arial Black" Foreground="Black" VerticalAlignment="Top" TextAlignment="Center"/>
@@ -28,7 +28,7 @@
                 <TextBlock HorizontalAlignment="Left" Margin="275,87,0,0" TextWrapping="Wrap" Text="Learnt the basics of node.js" VerticalAlignment="Top" Height="33" Width="196" FontSize="12" FontFamily="Arial" Foreground="Black" Grid.Row="1" TextAlignment="Center"/>
                 <TextBlock HorizontalAlignment="Left" Margin="248,82,0,0" TextWrapping="Wrap" Text="Benched 120 pounds today 10 times for 3 sets. " VerticalAlignment="Top" Height="33" Width="246" FontSize="12" FontFamily="Arial" Foreground="Black" Grid.Row="2" TextAlignment="Center"/>
                 <TextBlock HorizontalAlignment="Left" Margin="238,77,0,0" TextWrapping="Wrap" Text="Practiced for 1 hour with kevin at the gym." VerticalAlignment="Top" Height="33" Width="256" FontSize="12" FontFamily="Arial" Foreground="Black" TextAlignment="Center"/>
-                <Image Source="Assets/bboying.jpg" Height="80" Margin="275,28,-275,25" Grid.Row="0" />
+                <Image Source="Assets/bboying.jpg" Height="80" Margin="275,28,-275,25" Grid.Row="0"  />
                 <Image Source="Assets/NodeJs.jpg" Height="50" Margin="275,37,-254,46" Grid.Row="1" />
             </Grid>
         </materialDesign:TransitioningContent>

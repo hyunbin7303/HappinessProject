@@ -41,5 +41,16 @@ namespace Pizzaria1
 
             return tdDate;
         }
+
+        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            BreakcanceWindow breakcanceWindow = new BreakcanceWindow();
+            breakcanceWindow.Show();
+        }
+
+        private void Rectangle_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }

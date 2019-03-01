@@ -9,12 +9,17 @@ namespace Pizzaria1
     public class HP_Singleton
     {
         public ScoreEvaluation scoreEvaluation;
+        public PrivateInfo privateInfo;
+
 
         private static HP_Singleton instance = null;
         private static readonly object padlock = new object();
         private HP_Singleton()
         {
             scoreEvaluation = new ScoreEvaluation();
+            privateInfo = new PrivateInfo();
+            privateInfo.StartDate = new DateTime(2019, 2, 25);
+            privateInfo.EndDate = new DateTime(2019, 3, 20);
         }
         public static HP_Singleton Instance
         {

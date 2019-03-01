@@ -15,28 +15,23 @@ using System.Windows.Shapes;
 namespace Pizzaria1
 {
     /// <summary>
-    /// Interaction logic for GoalSetting.xaml
+    /// Interaction logic for BreakcanceWindow.xaml
     /// </summary>
-    public partial class FriendSetting
+    public partial class BreakcanceWindow : Window
     {
-        public FriendSetting()
+        public BreakcanceWindow()
         {
             InitializeComponent();
-            tab_info.IsEnabled = false;
-            tab_detail.IsEnabled = false;
         }
 
-        private void Btn_Lab1_Click(object sender, RoutedEventArgs e)
+        private void Btn_Close_Click(object sender, RoutedEventArgs e)
         {
-            this.tabControl.SelectedIndex = 1;
+            this.Close();
         }
 
-        private void Btn_Next_Click(object sender, RoutedEventArgs e)
+        private void Btn_SetUpNextPlan_Click(object sender, RoutedEventArgs e)
         {
-            this.tabControl.SelectedIndex = 2;
-            UC_Julio uC_Julio = new UC_Julio();
-           
-
+            MessageBox.Show("Future Functionality. ");
         }
     }
 }
