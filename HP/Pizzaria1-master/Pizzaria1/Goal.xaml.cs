@@ -24,5 +24,17 @@ namespace Pizzaria1
         {
             InitializeComponent();
         }
+
+        private void pythonExampleStart_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window = new Window1();
+            window.Show();
+        }
+
+        private void pythonExampleDetail_Click(object sender, RoutedEventArgs e)
+        {
+            GoalViewDetail goalView = new GoalViewDetail();
+            goalView.ShowDialog();
+        }
     }
 }

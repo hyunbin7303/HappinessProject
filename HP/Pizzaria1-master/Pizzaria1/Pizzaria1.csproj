@@ -62,15 +62,23 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GoalViewDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoalViewDetail.Designer.cs">
+      <DependentUpon>GoalViewDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="PrioritySetup.xaml.cs">
       <DependentUpon>PrioritySetup.xaml</DependentUpon>
     </Compile>
@@ -86,9 +94,6 @@
     </Compile>
     <Compile Include="Detail.xaml.cs">
       <DependentUpon>Detail.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="FirstTask.xaml.cs">
-      <DependentUpon>FirstTask.xaml</DependentUpon>
     </Compile>
     <Compile Include="Goal.xaml.cs">
       <DependentUpon>Goal.xaml</DependentUpon>
@@ -113,11 +118,10 @@
     <Compile Include="UC_Julio.Designer.cs">
       <DependentUpon>UC_Julio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Page Include="Detail.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="FirstTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,6 +165,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -176,6 +184,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="GoalViewDetail.resx">
+      <DependentUpon>GoalViewDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ScoreTracker.resx">
       <DependentUpon>ScoreTracker.cs</DependentUpon>
     </EmbeddedResource>
