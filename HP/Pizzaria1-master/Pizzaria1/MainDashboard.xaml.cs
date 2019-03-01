@@ -23,12 +23,23 @@ namespace Pizzaria1
         public MainDashboard()
         {
             InitializeComponent();
+            DateLb.Content = getDate();
         }
 
         private void Btn_Detail(object sender, RoutedEventArgs e)
         {
             ScoreTracker breakdance = new ScoreTracker();
             breakdance.Show();
+        }
+
+
+        private string getDate ()
+        {
+            string tdDate = String.Empty;
+
+            tdDate = DateTime.Today.ToString("MMMM dd yyyy");
+
+            return tdDate;
         }
     }
 }
