@@ -24,5 +24,35 @@ namespace Pizzaria1
         {
             InitializeComponent();
         }
+        private void btn_AddImportantUrgent_Click(object sender, RoutedEventArgs e)
+        {
+            lb_IU.Items.Add(txt_AddImportantUrgent.Text);
+            
+        }
+        private void btn_DeleteImportantUrgent_Click(object sender, RoutedEventArgs e)
+        {
+            lb_IU.Items.RemoveAt(lb_IU.Items.IndexOf(lb_IU.SelectedItem));
+        }
+
+
+        private void btn_AddImportantNotUrgent_Click(object sender, RoutedEventArgs e)
+        {
+            lb_IXU.Items.Add(txt_AddImportantNotUrgent.Text);
+        }
+        private void btn_DeleteImportantNotUrgent_Click(object sender, RoutedEventArgs e)
+        {
+            lb_IXU.Items.RemoveAt(lb_IXU.Items.IndexOf(lb_IXU.SelectedItem));
+        }
+
+        private void btn_AddNotImportantNotUrgent_Click(object sender, RoutedEventArgs e)
+        {
+            lb_XIXU.Items.Add(txt_AddNotImportantNotUrgent.Text);
+        }
+
+        private void btn_DeleteNotImportantNotUrgent_Click(object sender, RoutedEventArgs e)
+        {
+            lb_XIXU.Items.RemoveAt(lb_XIXU.Items.IndexOf(lb_XIXU.SelectedItem));
+
+        }
     }
 }

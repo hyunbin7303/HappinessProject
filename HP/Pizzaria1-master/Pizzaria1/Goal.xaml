@@ -13,21 +13,27 @@
                 <StackPanel>
                     <TextBlock Text="Main Priority" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                     <StackPanel Margin="10">
-                        <TextBlock Text="Main Goal" FontSize="50" FontFamily="Cooper Black" Foreground="#FFC00000"/>
-                        <TextBlock FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"><Run Text="Every day Gym"/><LineBreak/><Run/></TextBlock>
-                        <TextBlock Text="YOYOYOYO" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
+                        <TextBlock Text="Udemy Python Tutorial" FontSize="30" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                        <TextBlock Text="Everyday 4~5 chapters" FontSize="15" FontFamily="Champagne &amp; Limousines"/>
+                        <TextBlock Text="Due Date : March 15th, 2019" FontSize="15" FontFamily="Champagne &amp; Limousines"/>
                         <TextBlock FontSize="18" Width="400" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap"/>
                     </StackPanel>
-                    <Button FontFamily="Champagne &amp; Limousines" Content="Start" FontSize="15" Margin="25"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Height="23" Margin="10,0,20,0" Name="pythonExampleStart" VerticalAlignment="Center" Click="pythonExampleStart_Click">Start</Button>
+                        <Button Height="23" Margin="10,0,10,0" Name="pythonExampleDetail" VerticalAlignment="Center" Click="pythonExampleDetail_Click">View Detail</Button>
+                    </StackPanel>
                 </StackPanel>
                 <StackPanel>
-                    <TextBlock Text="Daily WOrk" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <TextBlock Text="Daily Work" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                     <StackPanel Margin="10">
-                        <TextBlock Text="Main Goal" FontSize="50" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                        <TextBlock Text="Push-up 40 mins" FontSize="39" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                         <TextBlock FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"><Run Text="Every day Gym"/><LineBreak/><Run/></TextBlock>
-                        <TextBlock Text="" FontSize="20" FontFamily="Champagne &amp; Limousines" Margin="5"/>
                         <TextBlock FontSize="18" Width="400" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap"/>
-                        <Button FontFamily="Champagne &amp; Limousines" Content="Start" FontSize="15" Margin="25"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Height="23" Margin="10,0,20,0" Name="workoutStart" VerticalAlignment="Center">Start</Button>
+                            <Button Height="23" Margin="10,0,10,0" Name="workoutDetail" VerticalAlignment="Center">View Detail</Button>
+                        </StackPanel>
+
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
