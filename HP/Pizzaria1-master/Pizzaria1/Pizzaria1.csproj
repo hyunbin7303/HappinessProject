@@ -225,5 +225,10 @@
   <ItemGroup>
     <Resource Include="Assets\udemy.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\NodeJs.jpg" />
+    <Resource Include="Assets\quote1.jpg" />
+    <Resource Include="Assets\workout.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
