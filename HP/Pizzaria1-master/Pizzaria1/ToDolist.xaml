@@ -32,7 +32,7 @@
                             </TextBlock>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                                 <TextBlock Text="Everyday" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
-                                <Button Width="100" Content="Done" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click"/>
+                                <Button Width="100" Content="Report" FontFamily="Champagne &amp; Limousines" Margin="10" Click="Button_Click"/>
                             </StackPanel>
                         </StackPanel>
                     </Grid>
@@ -45,11 +45,11 @@
                             <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="Programming" Foreground="#FFC00000"/>
                         <Image Source="Assets/programming.jpg" Width="200" Height="150" Stretch="UniformToFill" />
                         <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
-                                hey lol
+                                Python tutorial from Udemy.
                             </TextBlock>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <TextBlock Text="Every week"  VerticalAlignment="Center" Margin="10" FontSize="15" FontFamily="Champagne &amp; Limousines"/>
-                                <Button Width="100" Click="Btn_Second" Content="Done" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                                <TextBlock Text="2 hours"  VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                                <Button Width="100" Click="Btn_Second" Content="Report" FontFamily="Champagne &amp; Limousines" Margin="10"/>
                             </StackPanel>
                         </StackPanel>
                     </Grid>
@@ -62,11 +62,11 @@
                             <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="Reading Books" Foreground="#FFC00000"/>
                             <Image Source="Assets/book.jpg" Width="200" Height="150" Stretch="UniformToFill" />
                             <TextBlock FontSize="8" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae est vel turpis hendrerit vulputate. In eleifend, nunc eu egestas.
+                                Planning to read harry poter books until the end of the semester.
                             </TextBlock>
                             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                <TextBlock Text="R$ 28" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
-                                <Button Width="100" Click="Btn_Third" Content="Leia Mais" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                                <TextBlock Text="30 mins" VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                                <Button Width="100" Click="Btn_Third" Content="Report" FontFamily="Champagne &amp; Limousines" Margin="10"/>
                             </StackPanel>
                         </StackPanel>
                     </Grid>

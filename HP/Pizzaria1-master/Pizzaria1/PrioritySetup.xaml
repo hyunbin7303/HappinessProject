@@ -10,50 +10,33 @@
     <Grid>
 
         <StackPanel>
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="8,14,0,0" Name="textBox1" VerticalAlignment="Top" Width="127" />
-            <Button Height="23" Margin="140,14,0,0" Name="btn_AddImportantUrgent" VerticalAlignment="Top" HorizontalAlignment="Left" Width="76" Click="btn_AddImportantUrgent_Click">Add Item</Button>
-            <ListBox x:Name="lb" Width="600" Height="80"  Background="LightBlue" Margin="0,15,0,15"/>
+            <Label Content="Important and Urgent" FontStyle="Italic" FontSize="20"></Label>
+            <StackPanel Orientation="Horizontal">
+                <TextBox HorizontalAlignment="Left" VerticalAlignment="Center" x:Name="txt_AddImportantUrgent" Width="200"></TextBox>
+                <Button Height="23" Margin="10,0,20,0" Name="btn_AddImportantUrgent" VerticalAlignment="Center" Click="btn_AddImportantUrgent_Click">Add Task</Button>
+                <Button Height="23" Margin="10,0,10,0" Name="btn_DeleteImportantUrgent" VerticalAlignment="Center" Click="btn_DeleteImportantUrgent_Click">Delete Task</Button>
+            </StackPanel>
+            <ListBox x:Name="lb_IU" Width="600" Height="70"  Background="LightBlue" Margin="0,15,0,15"/>
 
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="8,14,0,0" Name="textBox2" VerticalAlignment="Top" Width="127" />
-            <ListBox x:Name="lb2" Width="600" Height="80" Background="LightBlue" Margin="0,15,0,15"/>
-         
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="8,14,0,0" Name="textBox3" VerticalAlignment="Top" Width="127" />
-            <ListBox x:Name="lb3" Width="600" Height="80" Background="LightBlue" Margin="0,15,0,15"/>
-            
-            <TextBox Height="23" HorizontalAlignment="Left" Margin="8,14,0,0" Name="textBox4" VerticalAlignment="Top" Width="127" />
-            <ListBox x:Name="lb4" Width="600" Height="80" Background="LightBlue" Margin="0,15,0,15"/>
+            <StackPanel>
+                <Label Content="Important, but not Urgent" FontStyle="Italic" FontSize="20"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Center" x:Name="txt_AddImportantNotUrgent" Width="200"></TextBox>
+                    <Button Height="23" Margin="10,0,20,0" Name="btn_AddImportantNotUrgent" VerticalAlignment="Center" Click="btn_AddImportantNotUrgent_Click">Add Task</Button>
+                    <Button Height="23" Margin="10,0,10,0" Name="btn_DeleteImportantNotUrgent" VerticalAlignment="Center" Click="btn_DeleteImportantNotUrgent_Click">Delete Task</Button>
+                </StackPanel>
+            <ListBox x:Name="lb_IXU" Width="600" Height="70"  Background="LightBlue" Margin="0,15,0,15"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Not Important and Not Urgent" FontStyle="Italic" FontSize="20"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Center" x:Name="txt_AddNotImportantNotUrgent" Width="200"></TextBox>
+                    <Button Height="23" Margin="10,0,20,0" Name="btn_AddNotImportantNotUrgent" VerticalAlignment="Center" Click="btn_AddNotImportantNotUrgent_Click">Add Task</Button>
+                    <Button Height="23" Margin="10,0,10,0" Name="btn_DeleteNotImportantNotUrgent" VerticalAlignment="Center" Click="btn_DeleteNotImportantNotUrgent_Click">Delete Task</Button>
+                </StackPanel>
+                <ListBox x:Name="lb_XIXU" Width="600" Height="70"  Background="LightBlue" Margin="0,15,0,15"/>
+            </StackPanel>
         </StackPanel>
-        <!--<ListBox x:Name="lb2" Width="600" Height="200" Background="LightBlue">
-        </ListBox>
-        <ListBox x:Name="lb3" Width="600" Height="200" Background="LightBlue">
-        </ListBox>-->
-
-        <!--<ListBox VerticalAlignment="Top">
-            <ListBox.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="0.8*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
-                    </Grid>
-                </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-
-            <ListBoxItem Content="WCF"  Grid.Row="0" Grid.Column="0"/>
-            <ListBoxItem Content="ASP.NET"  Grid.Row="0" Grid.Column="1"/>
-            <ListBoxItem Content="VB.NET" Grid.Row="0" Grid.Column="2"/>
-            <ListBoxItem Content="Silverlight" Grid.Row="1" Grid.Column="0"/>
-            <ListBoxItem Content="Web Services" Grid.Row="1" Grid.Column="1"/>
-            <ListBoxItem Content="Windows Service" Grid.Row="1" Grid.Column="2"/>
-            <ListBoxItem Content="Windows Presentation Foundation" Grid.Row="2" Grid.ColumnSpan="3"/>
-        </ListBox>-->
 
     </Grid>
 </UserControl>
