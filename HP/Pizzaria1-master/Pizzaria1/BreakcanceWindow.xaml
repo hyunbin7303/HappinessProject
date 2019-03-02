@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pizzaria1"
         mc:Ignorable="d"
-        Title="Breakcance" Height="450" Width="500">
+        Title="Breakdance" Height="450" Width="500">
     <Grid Margin="10">
         <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
             <StackPanel Margin="10">
