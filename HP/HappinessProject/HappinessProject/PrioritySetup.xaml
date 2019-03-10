@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="HappinessProject.PrioritySetup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HappinessProject"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+        <StackPanel>
+            <Label Content="Important and Urgent" FontStyle="Italic" FontSize="20"></Label>
+            <StackPanel Orientation="Horizontal">
+                <TextBox HorizontalAlignment="Left" VerticalAlignment="Center" x:Name="txt_AddImportantUrgent" Width="200"></TextBox>
+                <Button Height="23" Margin="10,0,20,0" Name="btn_AddImportantUrgent" VerticalAlignment="Center" Click="btn_AddImportantUrgent_Click">Add Task</Button>
+                <Button Height="23" Margin="10,0,10,0" Name="btn_DeleteImportantUrgent" VerticalAlignment="Center" Click="btn_DeleteImportantUrgent_Click">Delete Task</Button>
+            </StackPanel>
+            <ListBox x:Name="lb_IU" Width="600" Height="70"  Background="LightBlue" Margin="0,15,0,15"/>
+
+            <StackPanel>
+                <Label Content="Important, but not Urgent" FontStyle="Italic" FontSize="20"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Center" x:Name="txt_AddImportantNotUrgent" Width="200"></TextBox>
+                    <Button Height="23" Margin="10,0,20,0" Name="btn_AddImportantNotUrgent" VerticalAlignment="Center" Click="btn_AddImportantNotUrgent_Click">Add Task</Button>
+                    <Button Height="23" Margin="10,0,10,0" Name="btn_DeleteImportantNotUrgent" VerticalAlignment="Center" Click="btn_DeleteImportantNotUrgent_Click">Delete Task</Button>
+                </StackPanel>
+            <ListBox x:Name="lb_IXU" Width="600" Height="70"  Background="LightBlue" Margin="0,15,0,15"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Not Important and Not Urgent" FontStyle="Italic" FontSize="20"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox HorizontalAlignment="Left" VerticalAlignment="Center" x:Name="txt_AddNotImportantNotUrgent" Width="200"></TextBox>
+                    <Button Height="23" Margin="10,0,20,0" Name="btn_AddNotImportantNotUrgent" VerticalAlignment="Center" Click="btn_AddNotImportantNotUrgent_Click">Add Task</Button>
+                    <Button Height="23" Margin="10,0,10,0" Name="btn_DeleteNotImportantNotUrgent" VerticalAlignment="Center" Click="btn_DeleteNotImportantNotUrgent_Click">Delete Task</Button>
+                </StackPanel>
+                <ListBox x:Name="lb_XIXU" Width="600" Height="70"  Background="LightBlue" Margin="0,15,0,15"/>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</UserControl>
