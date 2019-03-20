@@ -49,5 +49,11 @@ namespace HappinessProject
                 ProgressInfoList.Add(consumo);
             }
         }
+
+        private void Btn_Checking_Click(object sender, RoutedEventArgs e)
+        {
+            Developing developing = new Developing();
+            developing.Show();
+        }
     }
 }

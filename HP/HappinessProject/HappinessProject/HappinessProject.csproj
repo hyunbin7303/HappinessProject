@@ -76,6 +76,13 @@
     <Compile Include="BreakcanceWindow.xaml.cs">
       <DependentUpon>BreakcanceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ComboBoxViewModel.cs" />
+    <Compile Include="DataContextSampleTest.xaml.cs">
+      <DependentUpon>DataContextSampleTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Developing.xaml.cs">
+      <DependentUpon>Developing.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GoalViewDetail.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,7 +95,6 @@
     <Compile Include="PrivateSetting.xaml.cs">
       <DependentUpon>PrivateSetting.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProgressInfo.cs" />
     <Compile Include="ScoreTracker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,7 +134,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DataContextSampleTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Detail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Developing.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -20,6 +20,22 @@ namespace HappinessProject
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        //private int _boundNumber;
+        //public int BoundNumber
+        //{
+        //    get {return _boundNumber;}
+        //    set
+        //    {
+        //        if(_boundNumber != value)
+        //        {
+        //            _boundNumber = value;
+        //            OnPropertyChanged();
+        //        }
+        //    }
+
+        //}
+
         public MainWindow()
         {
             InitializeComponent();

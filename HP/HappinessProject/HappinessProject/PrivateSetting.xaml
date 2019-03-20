@@ -31,8 +31,19 @@
                 <Button Content="Modify" Margin="10"></Button>
             </StackPanel>
 
+            <WrapPanel>
+                <TextBlock Text="Window Title:" />
+                <TextBox x:Name="txtWindowTitle" Text="{Binding Title, UpdateSourceTrigger=Explicit}" Width="150"/>
+                <Button Name="btnUpdateSource" Click="btnUpdateSource_Click" Margin="5,0" Padding="5,0"/>
+            </WrapPanel>
+            <WrapPanel Margin="0,10,0,0">
+                <TextBlock Text="Window dimensions: " />
+                <TextBox Text="{Binding Width, UpdateSourceTrigger=LostFocus}" Width="50" />
+                <TextBlock Text=" x " />
+                <TextBox Text="{Binding Height, UpdateSourceTrigger=PropertyChanged}" Width="50" />
+            </WrapPanel>
         </StackPanel>
 
-        <!--<Button Content="OPTION SETTING TEST"></Button>-->
+
     </Grid>
 </UserControl>

@@ -7,20 +7,20 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace HappinessProject
 {
     /// <summary>
-    /// Interaction logic for PrivateSetting.xaml
+    /// Interaction logic for DataContextSampleTest.xaml
     /// </summary>
-    public partial class PrivateSetting : UserControl
+    public partial class DataContextSampleTest : Window
     {
-        public PrivateSetting()
+        public DataContextSampleTest()
         {
             InitializeComponent();
             this.DataContext = this;
@@ -28,8 +28,9 @@ namespace HappinessProject
 
         private void btnUpdateSource_Click(object sender, RoutedEventArgs e)
         {
-            BindingExpression bindingExpression = txtWindowTitle.GetBindingExpression(TextBox.TextProperty);
-            bindingExpression.UpdateSource();
+
+            BindingExpression binding = txtWindowTitle.GetBindingExpression(System.Windows.Controls.TextBox.TextProperty);
+            binding.UpdateSource();
         }
-    }
+    }   
 }

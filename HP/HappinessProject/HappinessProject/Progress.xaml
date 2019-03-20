@@ -75,6 +75,7 @@
                     <TextBlock Foreground="#303030" FontSize="18" VerticalAlignment="Bottom" Margin="8, 6" FontFamily="Arial" Text="75%"/>
                 </StackPanel>
             </StackPanel>
+            <Button Content="Check" x:Name="Btn_Checking" Click="Btn_Checking_Click" HorizontalAlignment="Center"></Button>
         </Grid>
 
 

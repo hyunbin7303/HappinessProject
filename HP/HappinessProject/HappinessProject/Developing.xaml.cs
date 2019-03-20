@@ -10,26 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace HappinessProject
 {
     /// <summary>
-    /// Interaction logic for PrivateSetting.xaml
+    /// Interaction logic for Developing.xaml
     /// </summary>
-    public partial class PrivateSetting : UserControl
+    public partial class Developing : Window
     {
-        public PrivateSetting()
+        public Developing()
         {
             InitializeComponent();
-            this.DataContext = this;
-        }
-
-        private void btnUpdateSource_Click(object sender, RoutedEventArgs e)
-        {
-            BindingExpression bindingExpression = txtWindowTitle.GetBindingExpression(TextBox.TextProperty);
-            bindingExpression.UpdateSource();
+            DataContext = new ComboBoxViewModel();
         }
     }
 }

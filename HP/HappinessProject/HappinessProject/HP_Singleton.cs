@@ -10,8 +10,6 @@ namespace HappinessProject
     {
         public ScoreEvaluation scoreEvaluation;
         public PrivateInfo privateInfo;
-
-
         private static HP_Singleton instance = null;
         private static readonly object padlock = new object();
         private HP_Singleton()
