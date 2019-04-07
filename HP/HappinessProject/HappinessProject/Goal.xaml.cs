@@ -23,6 +23,7 @@ namespace HappinessProject
         public Goal()
         {
             InitializeComponent();
+            SQLdb.ConnectionNpg();
         }
 
         private void pythonExampleStart_Click(object sender, RoutedEventArgs e)
