@@ -4,10 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HappinessProject"
-        mc:Ignorable="d"
-        Title="Developing" Height="450" Width="800">
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Title="Developing" Height="700" Width="800">
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
@@ -38,12 +39,12 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="0" Margin="5">
             <TextBlock>Templated Colors</TextBlock>
-            <ComboBox ItemsSource="{Binding NameCollection}">
-                <!--<ComboBox.ItemTemplate>
+            <ComboBox ItemsSource="{Binding userCollection}">
+                <ComboBox.ItemTemplate>
                     <DataTemplate>
-                        <Ellipse Width="15" Height="15" Fill="{Binding}"></Ellipse>
+                        <TextBlock Text="{Binding FullName}"></TextBlock>
                     </DataTemplate>
-                </ComboBox.ItemTemplate>-->
+                </ComboBox.ItemTemplate>
             </ComboBox>
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.Column="1" Margin="5">
@@ -61,6 +62,22 @@
                     Item 2
                 </ComboBoxItem>
             </ComboBox>
+        </StackPanel>
+        
+        
+        <StackPanel Grid.Row="2" Grid.Column="0" Margin="5">
+            <TextBlock>List Box Testing</TextBlock>
+            <ListBox ItemsSource="{Binding  userCollection}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock FontSize="15" Text="{Binding Path=user_id}" />
+                            <TextBlock Foreground="Blue" Text="{Binding Path=FullName}" />
+                            <TextBlock Text="{Binding Path=user_description}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </StackPanel>
     </Grid>
 </Window>

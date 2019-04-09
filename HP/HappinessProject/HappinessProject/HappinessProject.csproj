@@ -98,7 +98,7 @@
     <Compile Include="BreakcanceWindow.xaml.cs">
       <DependentUpon>BreakcanceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ComboBoxViewModel.cs" />
+    <Compile Include="ViewModels\ComboBoxViewModel.cs" />
     <Compile Include="DataContextSampleTest.xaml.cs">
       <DependentUpon>DataContextSampleTest.xaml</DependentUpon>
     </Compile>
@@ -112,6 +112,7 @@
       <DependentUpon>GoalViewDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Task.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="PrioritySetup.xaml.cs">
       <DependentUpon>PrioritySetup.xaml</DependentUpon>
     </Compile>
@@ -138,7 +139,7 @@
       <DependentUpon>Progress.xaml</DependentUpon>
     </Compile>
     <Compile Include="ScoreEvaluation.cs" />
-    <Compile Include="SQLdb.cs" />
+    <Compile Include="Models\DAL.cs" />
     <Compile Include="ToDolist.xaml.cs">
       <DependentUpon>ToDolist.xaml</DependentUpon>
     </Compile>
@@ -151,6 +152,7 @@
     <Compile Include="UC_Julio.Designer.cs">
       <DependentUpon>UC_Julio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -270,6 +272,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\graph.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ViewModels\ViewModelExplain.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

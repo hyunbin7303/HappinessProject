@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using HappinessProject.Models;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -18,7 +19,7 @@ namespace DdSetting
         public IDbConnection Connection { get; private set; }
         public IDataMapper(IDbConnection connection)
         {
-            if(connection == null)
+            if (connection == null)
             {
                 throw new ArgumentNullException("A valid database connection is required.");
             }
@@ -39,26 +40,14 @@ namespace HappinessProject
 
 
     // This class will be used for testing database management.
-    public static class SQLdb
+    public class DAL
     {
         private static string connectionString = string.Format("Server={0};Port={1};" +
         "User Id={2};Password={3};Database={4};",
         "127.0.0.1", "5432", "postgres",
         "Conestoga1", "HPdb");
-
-        private static NpgsqlConnection conn = null;
-
-        public static bool Connection(NpgsqlConnection conn)
-        {
-            conn = new NpgsqlConnection(connectionString);
-            conn.Open();
-            return true;
-        }
-        public static bool ConnectionClose()
-        {
-            conn.Close();
-            return true;
-        }
+        public NpgsqlConnection conn = new NpgsqlConnection(connectionString);
+        public NpgsqlCommand cmd = new NpgsqlCommand();
 
         public static bool ConnectionNpg()
         {
@@ -66,16 +55,17 @@ namespace HappinessProject
             {
                 NpgsqlConnection conn = new NpgsqlConnection(connectionString);
                 conn.Open();
-                string sql = "SELECT id, tekst FROM public.simple_table;";
+                string sql = string.Format("SELECT user_name, user_id, user_description FROM hpschema.{0};", @"""User""");
+
                 NpgsqlCommand command = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = command.ExecuteReader();
                 while (dr.Read())
                 {
-                    Console.Write("{0}\t{1} \n", dr[0], dr[1]);
-                    
+                    Console.Write("{0}\t{1} \t{2} \n", dr[0], dr[1], dr[2]);
+
                 }
 
-                conn.Close();
+                //    conn.Close();
             }
             catch (Exception ex)
             {
@@ -87,6 +77,32 @@ namespace HappinessProject
 
 
 
-
+        public IList<User> userDisplay()
+        {
+            List<User> listUsers = new List<User>();
+            try
+            {
+                conn.Open();
+                string sql = string.Format("SELECT {0},{1},{2},{3} FROM hpschema.{4};", "id", @"""first_Name""", @"""last_Name""", "description", @"""User""");
+                NpgsqlCommand command = new NpgsqlCommand(sql, conn);
+                NpgsqlDataReader dr = command.ExecuteReader();
+    
+                while (dr.Read())
+                {
+                    User user = new User();
+                    user.user_id = Convert.ToInt32(dr["id"]);
+                    user.FirstName = dr["first_Name"].ToString();
+                    user.LastName = dr["last_Name"].ToString();
+                    user.user_description = dr["description"].ToString();
+                    listUsers.Add(user);
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex.ToString());
+            }
+            return listUsers;
+        }
     }
 }

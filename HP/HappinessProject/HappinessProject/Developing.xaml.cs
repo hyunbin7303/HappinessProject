@@ -19,7 +19,7 @@ namespace HappinessProject
     /// </summary>
     public partial class Developing : Window
     {
-        public Developing()
+      public Developing()
         {
             InitializeComponent();
             DataContext = new ComboBoxViewModel();

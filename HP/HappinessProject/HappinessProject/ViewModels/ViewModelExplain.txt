@@ -1,0 +1,10 @@
+﻿View Model 
+
+View model is just model for the view.
+It attaches the required data from the model to view model.
+
+Encapsulates the presentation logic for a user caes or user task in the application.
+
+It contains the properties and command which can bind to the UI controls.
+It may implement additional properties which can be helpful to display the Model data to the view.
+It can implement the InotifyPropertyChanged and INotifyCollectionChanged

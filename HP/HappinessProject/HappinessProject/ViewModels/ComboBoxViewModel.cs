@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HappinessProject.Models;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -11,11 +12,13 @@ namespace HappinessProject
     {
         public List<string> NameCollection { get; set; }
         public List<Brush> BrushCollection { get; set; }
+        public List<User> userCollection { get; set; }
+        DAL dal = new DAL();
         public ComboBoxViewModel()
         {
             NameCollection = new List<string>()
             {
-                "Kevin",
+                "asdf",
                 "Park",
                 "NAME",
                 "CHECKING",
@@ -27,6 +30,14 @@ namespace HappinessProject
                 Brushes.Orange,
                 Brushes.Green
             };
+            Call_AllUserInfo();
+        }
+
+        public void Call_AllUserInfo()
+        {
+            //userCollection.Add()
+            userCollection = dal.userDisplay().ToList();
+
         }
     }
 }
