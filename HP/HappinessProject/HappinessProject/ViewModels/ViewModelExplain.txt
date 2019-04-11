@@ -1,4 +1,12 @@
-﻿View Model 
+﻿
+
+The Model Class
+Model Class is responsible for data representation. It inherits INotifyPropertyChangedinterface to notify ViewModel if properties defined in Model are modified. 
+
+
+
+
+View Model 
 
 View model is just model for the view.
 It attaches the required data from the model to view model.
@@ -8,3 +16,16 @@ Encapsulates the presentation logic for a user caes or user task in the applicat
 It contains the properties and command which can bind to the UI controls.
 It may implement additional properties which can be helpful to display the Model data to the view.
 It can implement the InotifyPropertyChanged and INotifyCollectionChanged
+
+
+
+
+
+Upsides of MVVM
+Flexibility: Multiple views can be used with the same ViewModel which allows completely different look and feel features of the same functionality depending on what different users’ requirement.
+
+Re-Usability: Because of the segregation of UI and code level functionality, both the views and view\models have higher potential for re-use.
+
+Low Degree of Coupling: Segregation of the user interface design and functionality development makes it possible to segregate developer’s work and designer’s work.
+
+Testing: Unit testing is quite possible due to low degree of coupling, since UI testing will cover the testing of visual features, e.g., colors, font styles and functional test cases will cover classes in ViewModel separately.

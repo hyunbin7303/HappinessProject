@@ -16,7 +16,6 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-
         <StackPanel Grid.Row="0" Grid.Column="0" Margin="5">
             <TextBlock>XAML Items</TextBlock>
             <ComboBox>
@@ -30,7 +29,6 @@
                 </ComboBoxItem>
             </ComboBox>
         </StackPanel>
-
         <StackPanel Grid.Row="0" Grid.Column="1" Margin="5">
             <TextBlock>Names</TextBlock>
             <ComboBox ItemsSource="{Binding NameCollection}"/>
@@ -63,8 +61,6 @@
                 </ComboBoxItem>
             </ComboBox>
         </StackPanel>
-        
-        
         <StackPanel Grid.Row="2" Grid.Column="0" Margin="5">
             <TextBlock>List Box Testing</TextBlock>
             <ListBox ItemsSource="{Binding  userCollection}">

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HappinessProject.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,8 @@ namespace HappinessProject
         public MainDashboard()
         {
             InitializeComponent();
-            DateLb.Content = getDate();
+            //DateLb.Content = getDate();
+            DataContext = new MainDashViewModel();
         }
 
         private void Btn_Detail(object sender, RoutedEventArgs e)
@@ -44,13 +46,13 @@ namespace HappinessProject
 
         private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            BreakcanceWindow breakcanceWindow = new BreakcanceWindow();
-            breakcanceWindow.Show();
+
         }
 
-        private void Rectangle_MouseDown_1(object sender, MouseButtonEventArgs e)
+        private void lb_Tasks_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            StartTask breakcanceWindow = new StartTask();
+            breakcanceWindow.Show();
         }
     }
 }

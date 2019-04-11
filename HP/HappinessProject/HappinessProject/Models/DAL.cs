@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 
 namespace DdSetting
@@ -25,7 +24,6 @@ namespace DdSetting
             }
             this.Connection = connection;
         }
-
         public abstract List<T> Select(out Exception exError);
         public abstract bool Create(T instance, out Exception exError);
         public abstract T Read(int ID, out Exception exError);
@@ -37,8 +35,6 @@ namespace DdSetting
 
 namespace HappinessProject
 {
-
-
     // This class will be used for testing database management.
     public class DAL
     {
@@ -48,35 +44,6 @@ namespace HappinessProject
         "Conestoga1", "HPdb");
         public NpgsqlConnection conn = new NpgsqlConnection(connectionString);
         public NpgsqlCommand cmd = new NpgsqlCommand();
-
-        public static bool ConnectionNpg()
-        {
-            try
-            {
-                NpgsqlConnection conn = new NpgsqlConnection(connectionString);
-                conn.Open();
-                string sql = string.Format("SELECT user_name, user_id, user_description FROM hpschema.{0};", @"""User""");
-
-                NpgsqlCommand command = new NpgsqlCommand(sql, conn);
-                NpgsqlDataReader dr = command.ExecuteReader();
-                while (dr.Read())
-                {
-                    Console.Write("{0}\t{1} \t{2} \n", dr[0], dr[1], dr[2]);
-
-                }
-
-                //    conn.Close();
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex);
-                return false;
-            }
-            return true;
-        }
-
-
-
         public IList<User> userDisplay()
         {
             List<User> listUsers = new List<User>();
@@ -103,6 +70,56 @@ namespace HappinessProject
                 Console.Error.WriteLine(ex.ToString());
             }
             return listUsers;
+        }
+        public void GetConnection()
+        {
+        }
+        // How to get column number? 
+        static void HasRows(NpgsqlConnection connection, string tableName)
+        {
+            string tableNameCheck = @"""User""";
+            string sql = string.Format("SELECT * FROM hpschema.{0};", tableNameCheck);
+            using (connection)
+            {
+                NpgsqlCommand cmd = new NpgsqlCommand(sql);
+                connection.Open();
+                NpgsqlDataReader reader = cmd.ExecuteReader();
+                if(reader.HasRows)
+                {
+                    while(reader.Read())
+                    {
+                        
+                    }
+                }
+                reader.Close();
+            }
+        }
+        public IList<Task> TaskSelect()
+        {
+            List<Task> Tasks = new List<Task>();
+            try
+            {
+                conn.Open();
+                string sql = string.Format("SELECT {0},{1},{2},{3} FROM hpschema.{4};", "id", @"""task_name""", @"""description""", "user_id", @"""Task""");
+                NpgsqlCommand command = new NpgsqlCommand(sql, conn);
+                NpgsqlDataReader dr = command.ExecuteReader();
+                while (dr.Read())
+                {
+                    Task task = new Task();
+                    task.taskID = Convert.ToInt32(dr["id"]);
+                    task.task_name = dr["task_name"].ToString();
+                    task.description = dr["description"].ToString();
+                    task.userID =Convert.ToInt32(dr["user_id"]);
+                //    task.startDate = dr.GetDateTime();
+                    Tasks.Add(task);
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex.ToString());
+            }
+            return Tasks;
         }
     }
 }

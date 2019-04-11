@@ -1,5 +1,7 @@
 ﻿
 
+using System.Collections.Generic;
+
 namespace HappinessProject.Models
 {
     public class Address
@@ -32,5 +34,14 @@ namespace HappinessProject.Models
                 return $"{FirstName} {LastName}";
             }
         }
+
+        public IList<UserReview> Reviews { get; set; }
+
+    }
+    public class UserReview
+    {
+        public int Id { get; set; }
+        public string ReviewName { get; set; }
+        public string ReviewContent { get; set; }
     }
 }

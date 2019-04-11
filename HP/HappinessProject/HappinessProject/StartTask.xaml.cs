@@ -17,12 +17,15 @@ namespace HappinessProject
     /// <summary>
     /// Interaction logic for BreakcanceWindow.xaml
     /// </summary>
-    public partial class BreakcanceWindow : Window
+    public partial class StartTask : Window
     {
-        public BreakcanceWindow()
+        public StartTask()
         {
             InitializeComponent();
+            // Need to get Data Dynamically.
         }
+
+        
 
         private void Btn_Close_Click(object sender, RoutedEventArgs e)
         {
@@ -32,6 +35,14 @@ namespace HappinessProject
         private void Btn_SetUpNextPlan_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Future Functionality. ");
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // Update Information in here.
+            DAL dal = new DAL();
+            // How to get specific information in here?
+            // Need to find how..
         }
     }
 }

@@ -22,7 +22,6 @@ namespace HappinessProject
                 "Park",
                 "NAME",
                 "CHECKING",
-
             };
             BrushCollection = new List<Brush>()
             {

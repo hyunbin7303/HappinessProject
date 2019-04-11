@@ -95,9 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BreakcanceWindow.xaml.cs">
-      <DependentUpon>BreakcanceWindow.xaml</DependentUpon>
+    <Compile Include="StartTask.xaml.cs">
+      <DependentUpon>StartTask.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ExampleTesting\AsyncTest.cs" />
     <Compile Include="ViewModels\ComboBoxViewModel.cs" />
     <Compile Include="DataContextSampleTest.xaml.cs">
       <DependentUpon>DataContextSampleTest.xaml</DependentUpon>
@@ -152,11 +153,15 @@
     <Compile Include="UC_Julio.Designer.cs">
       <DependentUpon>UC_Julio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\MainDashViewModel.cs" />
+    <Compile Include="ViewModels\MainSomething.xaml.cs">
+      <DependentUpon>MainSomething.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
-    <Page Include="BreakcanceWindow.xaml">
+    <Page Include="StartTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -209,6 +214,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainDashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewModels\MainSomething.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
