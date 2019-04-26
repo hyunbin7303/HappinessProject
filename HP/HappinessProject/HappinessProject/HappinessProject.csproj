@@ -95,6 +95,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StartTask.xaml.cs">
       <DependentUpon>StartTask.xaml</DependentUpon>
     </Compile>
@@ -161,6 +164,10 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StartTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -284,6 +291,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ViewModels\ViewModelExplain.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WorkingDirectory\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

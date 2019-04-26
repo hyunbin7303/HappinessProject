@@ -12,12 +12,9 @@ namespace HappinessProject.Models
         public int userID { get; set; }
         public string task_name { get; set; }
         public string description { get; set; }
-        public DateTime startDate { get; set; }
-        public DateTime endDate { get; set; }
-        public Task()
-        {
-            startDate = DateTime.Now.Date;
-            endDate = DateTime.Today.Date;
-        }
+        public string startDate { get; set; }
+        public string endDate { get; set; }
+        public int score { get; set; }
+
     }
 }

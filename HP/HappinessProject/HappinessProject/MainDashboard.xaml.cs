@@ -38,9 +38,7 @@ namespace HappinessProject
         private string getDate ()
         {
             string tdDate = String.Empty;
-
             tdDate = DateTime.Today.ToString("MMMM dd yyyy");
-
             return tdDate;
         }
 
@@ -51,8 +49,13 @@ namespace HappinessProject
 
         private void lb_Tasks_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            StartTask breakcanceWindow = new StartTask();
-            breakcanceWindow.Show();
+            Models.Task tempTask = new Models.Task();
+            tempTask.startDate = "2019-01-20";
+            tempTask.endDate = "2020-01-20";
+            tempTask.taskID = 1;
+            tempTask.task_name = "BreakDance";
+            StartTask taskStart = new StartTask(tempTask);
+            taskStart.Show();
         }
     }
 }

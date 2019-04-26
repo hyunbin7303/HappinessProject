@@ -24,8 +24,7 @@ namespace HappinessProject.ViewModels
         public void GetDailyTask()
         {
             DAL dal = new DAL();
-            taskCollection = dal.TaskSelect().ToList();
-
+            taskCollection = dal.TaskSelection().ToList();
         }
 
 

@@ -19,13 +19,18 @@ namespace HappinessProject
     /// </summary>
     public partial class StartTask : Window
     {
+        Models.Task task = null;
         public StartTask()
         {
             InitializeComponent();
-            // Need to get Data Dynamically.
+        }
+        public StartTask(Models.Task taskGet)
+        {
+            InitializeComponent();
+            task = taskGet;
+            MessageBox.Show(task.taskID + " - " + task.score);
         }
 
-        
 
         private void Btn_Close_Click(object sender, RoutedEventArgs e)
         {

@@ -40,17 +40,16 @@ namespace HappinessProject
     {
         private static string connectionString = string.Format("Server={0};Port={1};" +
         "User Id={2};Password={3};Database={4};",
-        "127.0.0.1", "5432", "postgres",
+        "localhost", "5432", "postgres",
         "Conestoga1", "HPdb");
         public NpgsqlConnection conn = new NpgsqlConnection(connectionString);
-        public NpgsqlCommand cmd = new NpgsqlCommand();
         public IList<User> userDisplay()
         {
             List<User> listUsers = new List<User>();
             try
             {
                 conn.Open();
-                string sql = string.Format("SELECT {0},{1},{2},{3} FROM hpschema.{4};", "id", @"""first_Name""", @"""last_Name""", "description", @"""User""");
+                string sql = string.Format("SELECT {0},{1},{2},{3} FROM hpschema.{4};", "id", @"""fName""", @"""lName""", "description", @"""User""");
                 NpgsqlCommand command = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = command.ExecuteReader();
     
@@ -58,8 +57,8 @@ namespace HappinessProject
                 {
                     User user = new User();
                     user.user_id = Convert.ToInt32(dr["id"]);
-                    user.FirstName = dr["first_Name"].ToString();
-                    user.LastName = dr["last_Name"].ToString();
+                    user.FirstName = dr["fName"].ToString();
+                    user.LastName = dr["lName"].ToString();
                     user.user_description = dr["description"].ToString();
                     listUsers.Add(user);
                 }
@@ -94,25 +93,28 @@ namespace HappinessProject
                 reader.Close();
             }
         }
-        public IList<Task> TaskSelect()
+
+
+        public IList<Task> TaskSelection()
         {
             List<Task> Tasks = new List<Task>();
             try
             {
                 conn.Open();
-                string sql = string.Format("SELECT {0},{1},{2},{3} FROM hpschema.{4};", "id", @"""task_name""", @"""description""", "user_id", @"""Task""");
+                string sql = "SELECT * FROM Proc_DisplayTaskInfo(1)";
                 NpgsqlCommand command = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = command.ExecuteReader();
                 while (dr.Read())
                 {
                     Task task = new Task();
-                    task.taskID = Convert.ToInt32(dr["id"]);
-                    task.task_name = dr["task_name"].ToString();
+                    task.taskID = Convert.ToInt32(dr["taskid"]);
+                    task.task_name = dr["tname"].ToString();
                     task.description = dr["description"].ToString();
-                    task.userID =Convert.ToInt32(dr["user_id"]);
-                //    task.startDate = dr.GetDateTime();
+                    task.startDate = dr["startdate"].ToString();
+                    task.endDate = dr["enddate"].ToString();
+                    task.score = Convert.ToInt32(dr["score"]);
                     Tasks.Add(task);
-                }
+                }   
                 conn.Close();
             }
             catch (Exception ex)
