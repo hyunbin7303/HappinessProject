@@ -37,5 +37,17 @@ namespace HappinessProject
             GoalViewDetail goalView = new GoalViewDetail();
             goalView.ShowDialog();
         }
+
+        private void AddTask_Click(object sender, RoutedEventArgs e)
+        {
+            AddTask addTaskWindow = new AddTask();
+            addTaskWindow.Show();
+
+        }
+
+        private void CancelTask_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

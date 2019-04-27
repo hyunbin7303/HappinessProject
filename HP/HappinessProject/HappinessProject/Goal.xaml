@@ -11,16 +11,13 @@
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
             <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
                 <StackPanel>
-                    <TextBlock Text="Main Priority" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <TextBlock Text="Add Task" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <TextBlock Text="Display Current Tasks" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                     <StackPanel Margin="10">
-                        <TextBlock Text="Udemy Python Tutorial" FontSize="30" FontFamily="Cooper Black" Foreground="#FFC00000"/>
-                        <TextBlock Text="Everyday 4~5 chapters" FontSize="15" FontFamily="Champagne &amp; Limousines"/>
-                        <TextBlock Text="Due Date : March 15th, 2019" FontSize="15" FontFamily="Champagne &amp; Limousines"/>
-                        <TextBlock FontSize="18" Width="400" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button Height="23" Margin="10,0,20,0" Name="pythonExampleStart" VerticalAlignment="Center" Click="pythonExampleStart_Click">Start</Button>
-                        <Button Height="23" Margin="10,0,10,0" Name="pythonExampleDetail" VerticalAlignment="Center" Click="pythonExampleDetail_Click">View Detail</Button>
+                        <Button Height="23" Margin="10,0,20,0" Name="AddTask"  VerticalAlignment="Center" Click="AddTask_Click">Add Task</Button>
+                        <Button Height="23" Margin="10,0,10,0" Name="CancelTask" VerticalAlignment="Center" Click="CancelTask_Click">Cancel</Button>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel>

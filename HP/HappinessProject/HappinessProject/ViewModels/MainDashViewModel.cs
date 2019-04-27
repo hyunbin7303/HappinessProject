@@ -12,7 +12,6 @@ namespace HappinessProject.ViewModels
     {
         public List<Task> taskCollection { get; set; }
         Business business;
-        private Person person;
         public EventHandler ShowMessageBox = delegate { };
         public MainDashViewModel()
         {

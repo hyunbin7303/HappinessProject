@@ -123,5 +123,29 @@ namespace HappinessProject
             }
             return Tasks;
         }
+
+        public bool insertTask(Models.Task newTask)
+        {
+            try
+            {
+                conn.Open();
+                string sql= "insert Task Query???";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+                conn.Close();
+
+            }
+            catch (NpgsqlException sqlex)
+            {
+                Console.WriteLine(sqlex);
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                return false;
+            }
+
+            return true;
+        }
     }
 }
