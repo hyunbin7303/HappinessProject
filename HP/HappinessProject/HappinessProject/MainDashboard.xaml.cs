@@ -24,7 +24,6 @@ namespace HappinessProject
         public MainDashboard()
         {
             InitializeComponent();
-            //DateLb.Content = getDate();
             DataContext = new MainDashViewModel();
         }
 
@@ -49,12 +48,9 @@ namespace HappinessProject
 
         private void lb_Tasks_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Models.Task tempTask = new Models.Task();
-            tempTask.startDate = "2019-01-20";
-            tempTask.endDate = "2020-01-20";
-            tempTask.taskID = 1;
-            tempTask.task_name = "BreakDance";
-            StartTask taskStart = new StartTask(tempTask);
+            var item = (ListBox)sender;
+            var selectedTask = (Models.Task)item.SelectedItem;
+            StartTask taskStart = new StartTask(selectedTask);
             taskStart.Show();
         }
     }

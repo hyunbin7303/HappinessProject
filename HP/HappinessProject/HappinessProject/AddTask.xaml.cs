@@ -26,13 +26,26 @@ namespace HappinessProject
         {
 
         }
-
         private void Btn_AddTask_Click(object sender, RoutedEventArgs e)
         {
             DAL dal = new DAL();
-            MessageBox.Show(date_Taskstart.SelectedDate.ToString() + " - " + date_Taskend.SelectedDate.ToString());
             Models.Task newTask = new Models.Task();
-            dal.insertTask(newTask);
+
+            // Setting up Task info.
+            newTask.task_name = txt_name.Text;
+            newTask.description = txt_description.Text;
+            newTask.startDate= date_Taskstart.SelectedDate.ToString();
+            newTask.endDate = date_Taskend.SelectedDate.ToString();
+            newTask.userID = HP_Singleton.Instance.userID;
+            if(dal.insertTask(newTask)) // Adding task into db.
+            {
+                MessageBox.Show("Success to add task.");
+                return;
+            }
+            else
+            {
+                MessageBox.Show("Fail to add task into database.");
+            }
         }
     }
 }

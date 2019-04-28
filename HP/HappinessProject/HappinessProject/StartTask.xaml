@@ -5,32 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HappinessProject"
         mc:Ignorable="d"
-        Title="Start Task" Height="650" Width="500">
+        Title="Start Task" Height="450" Width="500">
     <Grid Margin="10">
         <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
             <StackPanel Margin="10">
-                <Button Content="TESTING" HorizontalAlignment="Left" Margin="5" Click="Button_Click"></Button>
-                <Label Content="Date : March 1, 2019" FontSize="20" FontFamily="Arial"></Label>
-                <Label Content="Main work : Breakdance practice" FontSize="20" FontFamily="Arial"></Label>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Main work : " FontSize="20" FontFamily="Arial"></Label>
+                    <Label x:Name="lab_mainwork" Width="200" FontSize="20" FontFamily="Arial"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Start Date : " FontSize="20" FontFamily="Arial"></Label>
+                    <Label x:Name="lab_startDate" Width="200" FontSize="20" FontFamily="Arial"></Label>
+                </StackPanel>
+
                 <StackPanel>
-                    <Label Content="Self-Evaluation : 75%" FontSize="20" FontFamily="Arial"></Label>
-                    <Grid Margin="20" >
-                        <ProgressBar BorderThickness="20" Minimum="0" Maximum="100" Name="pbStatus"  Value="75" Margin="20,20,20,20"/>
-                    </Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Current Progress : " FontSize="20" FontFamily="Arial"></Label>
+                        <Label x:Name="lab_score" Width="200" FontSize="20" FontFamily="Arial"></Label>
+                    </StackPanel>
+                        <ProgressBar  BorderThickness="20" Minimum="0" Maximum="100" Name="pbStatus" Margin="20,20,20,20"/>
                     <Label Content="Description" FontSize="20" FontFamily="Arial"></Label>
-                    <TextBlock>
-                        HandStand 30 mins <LineBreak></LineBreak>
-                        following beat. <LineBreak></LineBreak>
+                    <TextBlock x:Name="txtBlock_Description" FontSize="12">
                     </TextBlock>
-                    <TextBox
-                        Height="50"
-                        Width="200"
+                    <TextBox Height="50" Width="200"
                         TextWrapping="Wrap"
                         AcceptsReturn="True"
                         HorizontalScrollBarVisibility="Disabled"
                         VerticalScrollBarVisibility="Auto"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="Btn_Start" Content="START" Margin="10" Width="100" Click="Btn_Start_Click"></Button>
                     <Button x:Name="Btn_SetUpNextPlan" FontSize="20" Width="150" Content="Next Plan" Margin="10" Click="Btn_SetUpNextPlan_Click"></Button>
                     <Button x:Name="Btn_Close" FontSize="20" Width="150" Content="Close" Margin="10" Click="Btn_Close_Click"></Button>
                 </StackPanel>

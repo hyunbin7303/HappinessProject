@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HappinessProject"
         mc:Ignorable="d"
-        Title="AddTask" Height="450" Width="800">
+        Title="AddTask" Height="450" Width="500">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -15,18 +15,18 @@
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="1" Orientation="Vertical" Margin="10" >
             <Label x:Name="TaskName" Content="Task name"  FontSize="18" FontWeight="Bold"></Label>
-            <TextBox x:Name="txt_name"  FontSize="15" ></TextBox>
+            <TextBox x:Name="txt_name"  FontSize="15" Width="300" HorizontalAlignment="Left" ></TextBox>
             <Label x:Name="TaskDescription" Content="Description"  FontSize="18" FontWeight="Bold"></Label>
-            <TextBox x:Name="txt_description" FontSize="15" ></TextBox>
+            <TextBox x:Name="txt_description" FontSize="15" Width="300" HorizontalAlignment="Left" ></TextBox>
             <Label x:Name="TaskStartDate" Content="Start Date"  FontSize="18" FontWeight="Bold"></Label>
             <StackPanel Orientation="Horizontal">
                 <DatePicker x:Name="date_Taskstart" HorizontalAlignment="Left"  DisplayDate="4/1/2019"  DisplayDateStart="1/1/2019"  DisplayDateEnd="12/31/2019"/>
-                <TextBox x:Name="txt_startdate" HorizontalAlignment="Right" Width="300"  FontSize="15" ></TextBox>
+                <!--<TextBox x:Name="txt_startdate" HorizontalAlignment="Right" Width="300"  FontSize="15" ></TextBox>-->
             </StackPanel>
             <Label x:Name="TaskEndDate" Content="End Date"  FontSize="18" FontWeight="Bold"></Label>
             <StackPanel Orientation="Horizontal">
                 <DatePicker x:Name="date_Taskend"  HorizontalAlignment="Left"  DisplayDate="4/1/2019"  DisplayDateStart="1/1/2019"  DisplayDateEnd="12/31/2019"/>
-                <TextBox x:Name="txt_enddate" FontSize="15" HorizontalAlignment="Right" Width="300"></TextBox>
+                <!--<TextBox x:Name="txt_enddate" FontSize="15" HorizontalAlignment="Right" Width="300"></TextBox>-->
             </StackPanel>
             <Button x:Name="btn_AddTask" Click="Btn_AddTask_Click" Content="Confirm" Margin="10"  Grid.Column="1" Height="30" Width="200" FontSize="16" VerticalAlignment="Top" BorderThickness="4" BorderBrush="LightSkyBlue" Background="#008ffb" Style="{DynamicResource MaterialDesignRaisedButton}" />
         </StackPanel>

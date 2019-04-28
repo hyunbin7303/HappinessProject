@@ -28,9 +28,17 @@ namespace HappinessProject
         {
             InitializeComponent();
             task = taskGet;
-            MessageBox.Show(task.taskID + " - " + task.score);
+            InitValues();
         }
 
+        private void InitValues()
+        {
+            lab_mainwork.Content = task.task_name;
+            lab_startDate.Content = task.startDate;
+            lab_score.Content = task.score;
+            pbStatus.Value = task.score;
+            txtBlock_Description.Text = task.description;
+        }
 
         private void Btn_Close_Click(object sender, RoutedEventArgs e)
         {
@@ -42,12 +50,10 @@ namespace HappinessProject
             MessageBox.Show("Future Functionality. ");
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+
+        private void Btn_Start_Click(object sender, RoutedEventArgs e)
         {
-            // Update Information in here.
-            DAL dal = new DAL();
-            // How to get specific information in here?
-            // Need to find how..
+
         }
     }
 }

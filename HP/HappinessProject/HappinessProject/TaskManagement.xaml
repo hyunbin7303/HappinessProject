@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="HappinessProject.Goal"
+﻿<UserControl x:Class="HappinessProject.TaskManagement"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -11,7 +11,7 @@
         <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
             <StackPanel Orientation="Vertical" VerticalAlignment="Bottom">
                 <StackPanel>
-                    <TextBlock Text="Add Task" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <TextBlock Text="Add Task" FontFamily="Champagne &amp; Limousines"  Foreground="#FFC00000"/>
                     <TextBlock Text="Display Current Tasks" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                     <StackPanel Margin="10">
                     </StackPanel>
@@ -21,15 +21,9 @@
                     </StackPanel>
                 </StackPanel>
                 <StackPanel>
-                    <TextBlock Text="Daily Work" FontFamily="Cooper Black" Foreground="#FFC00000" Margin="5,50,0,0"/>
                     <StackPanel Margin="10">
-                        <TextBlock Text="Push-up 100 times" FontSize="39" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                        <TextBlock Text="Push-up 100 times" FontSize="25" FontFamily="Cooper Black" Foreground="#FFC00000"/>
                         <TextBlock FontSize="25" FontFamily="Champagne &amp; Limousines" FontWeight="Bold" Margin="5"><Run Text="Every day Gym"/><LineBreak/><Run/></TextBlock>
-                        <TextBlock FontSize="18" Width="400" FontFamily="Champagne &amp; Limousines" Margin="5" TextWrapping="Wrap"/>
-                        <StackPanel Orientation="Horizontal">
-                            <Button Height="23" Margin="10,0,20,0" Name="workoutStart" VerticalAlignment="Center">Start</Button>
-                            <Button Height="23" Margin="10,0,10,0" Name="workoutDetail" VerticalAlignment="Center">View Detail</Button>
-                        </StackPanel>
 
                     </StackPanel>
                 </StackPanel>

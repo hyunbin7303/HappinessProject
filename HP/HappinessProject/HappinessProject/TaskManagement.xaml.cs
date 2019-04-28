@@ -18,9 +18,9 @@ namespace HappinessProject
     /// <summary>
     /// Interaction logic for DailyWork.xaml
     /// </summary>
-    public partial class Goal : UserControl
+    public partial class TaskManagement : UserControl
     {
-        public Goal()
+        public TaskManagement()
         {
             InitializeComponent();
             

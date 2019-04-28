@@ -101,6 +101,9 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ResultReport.xaml.cs">
+      <DependentUpon>ResultReport.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StartTask.xaml.cs">
       <DependentUpon>StartTask.xaml</DependentUpon>
     </Compile>
@@ -135,8 +138,8 @@
     <Compile Include="Detail.xaml.cs">
       <DependentUpon>Detail.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Goal.xaml.cs">
-      <DependentUpon>Goal.xaml</DependentUpon>
+    <Compile Include="TaskManagement.xaml.cs">
+      <DependentUpon>TaskManagement.xaml</DependentUpon>
     </Compile>
     <Compile Include="FriendSetting.xaml.cs">
       <DependentUpon>FriendSetting.xaml</DependentUpon>
@@ -175,6 +178,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ResultReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StartTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -191,7 +198,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Goal.xaml">
+    <Page Include="TaskManagement.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -256,6 +263,7 @@
     </Compile>
     <EmbeddedResource Include="GoalViewDetail.resx">
       <DependentUpon>GoalViewDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="ScoreTracker.resx">
       <DependentUpon>ScoreTracker.cs</DependentUpon>

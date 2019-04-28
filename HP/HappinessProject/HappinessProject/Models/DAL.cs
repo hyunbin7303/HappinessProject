@@ -129,19 +129,20 @@ namespace HappinessProject
             try
             {
                 conn.Open();
-                string sql= "insert Task Query???";
+                string sql= string.Format("SELECT * FROM Proc_InsertTaskTest('{0}', '{1}', {2})", newTask.task_name, newTask.description,newTask.userID);
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+                cmd.ExecuteNonQuery(); // Return value check please.
                 conn.Close();
 
             }
             catch (NpgsqlException sqlex)
             {
-                Console.WriteLine(sqlex);
+                conn.Close();
                 return false;
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex);
+                conn.Close();
                 return false;
             }
 
