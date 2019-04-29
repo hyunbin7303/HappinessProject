@@ -19,6 +19,7 @@ namespace HappinessProject
     /// </summary>
     public partial class StartTask : Window
     {
+        public bool TaskStart = false;
         Models.Task task = null;
         public StartTask()
         {
@@ -30,7 +31,6 @@ namespace HappinessProject
             task = taskGet;
             InitValues();
         }
-
         private void InitValues()
         {
             lab_mainwork.Content = task.task_name;
@@ -45,15 +45,23 @@ namespace HappinessProject
             this.Close();
         }
 
-        private void Btn_SetUpNextPlan_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("Future Functionality. ");
-        }
-
-
         private void Btn_Start_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show("Start This Task.");
+            // Button Text Change
+            TaskStart = true;
+            if(TaskStart)
+            {
+                Btn_Start.Content = "Finish";
 
+            }
+        }
+
+        private void Btn_ResultReport_Click(object sender, RoutedEventArgs e)
+        {
+            ResultReport report = new ResultReport();
+            report.Show();
         }
     }
 }
+ 

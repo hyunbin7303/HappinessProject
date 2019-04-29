@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HappinessProject"
         mc:Ignorable="d"
         Title="Result Report" Height="450" Width="500">
-    <Grid ShowGridLines="True">
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"></ColumnDefinition>
             <ColumnDefinition Width="auto"></ColumnDefinition>
@@ -20,10 +20,39 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <TextBlock Text="Start On Time" Grid.Row="0" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-        <ComboBox Width="200" Grid.Row="0" Grid.Column="1"></ComboBox>
+        <ComboBox x:Name="cb_start" Margin="5" Width="200" Grid.Row="0" Grid.Column="1">
+            <ComboBoxItem Content="Yes"></ComboBoxItem>
+            <ComboBoxItem Content="No"></ComboBoxItem>
+        </ComboBox>
         <TextBlock Text="Concentration" Grid.Row="1" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-        <ComboBox Width="200" Grid.Row="1" Grid.Column="1"></ComboBox>
+        <ComboBox x:Name="cb_Concentration" Margin="5" Width="200" Grid.Row="1" Grid.Column="1">
+            <ComboBoxItem Content="1"></ComboBoxItem>
+            <ComboBoxItem Content="2"></ComboBoxItem>
+            <ComboBoxItem Content="3"></ComboBoxItem>
+            <ComboBoxItem Content="4"></ComboBoxItem>
+            <ComboBoxItem Content="5"></ComboBoxItem>
+        </ComboBox>
         <TextBlock Text="Level of Completion" Grid.Row="2" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
-        <ComboBox Width="200" Grid.Row="2" Grid.Column="1"></ComboBox>
+        <ComboBox x:Name="cb_Completion" Margin="5" Width="200" Grid.Row="2" Grid.Column="1">
+            <ComboBoxItem Content="1"></ComboBoxItem>
+            <ComboBoxItem Content="2"></ComboBoxItem>
+            <ComboBoxItem Content="3"></ComboBoxItem>
+            <ComboBoxItem Content="4"></ComboBoxItem>
+            <ComboBoxItem Content="5"></ComboBoxItem>
+        </ComboBox>
+        <TextBlock Text="Satisfaction" Grid.Row="3" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <ComboBox x:Name="cb_Satisfaction" Margin="5" Width="200" Grid.Row="3" Grid.Column="1">
+            <ComboBoxItem Content="1"></ComboBoxItem>
+            <ComboBoxItem Content="2"></ComboBoxItem>
+            <ComboBoxItem Content="3"></ComboBoxItem>
+            <ComboBoxItem Content="4"></ComboBoxItem>
+            <ComboBoxItem Content="5"></ComboBoxItem>
+        </ComboBox>
+        <TextBlock Text="Finish On Time" Grid.Row="4" Grid.Column="0" FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <ComboBox Margin="5" x:Name="cb_FinishOnTime" Width="200" Grid.Row="4" Grid.Column="1">
+            <ComboBoxItem Content="Yes"></ComboBoxItem>
+            <ComboBoxItem Content="No"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="Btn_Confirm" Content="Confirm" Width="200" Grid.Row="5" Grid.Column="1" Click="Btn_Confirm_Click"></Button>
     </Grid>
 </Window>

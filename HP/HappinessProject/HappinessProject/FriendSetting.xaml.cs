@@ -34,9 +34,6 @@ namespace HappinessProject
         private void Btn_Next_Click(object sender, RoutedEventArgs e)
         {
             this.tabControl.SelectedIndex = 2;
-            UC_Julio uC_Julio = new UC_Julio();
-           
-
         }
     }
 }

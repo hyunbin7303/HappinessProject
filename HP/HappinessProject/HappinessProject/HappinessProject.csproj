@@ -156,12 +156,6 @@
     <Compile Include="MainDashboard.xaml.cs">
       <DependentUpon>MainDashboard.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UC_Julio.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_Julio.Designer.cs">
-      <DependentUpon>UC_Julio.cs</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\MainDashViewModel.cs" />
     <Compile Include="ViewModels\MainSomething.xaml.cs">
       <DependentUpon>MainSomething.xaml</DependentUpon>
@@ -271,9 +265,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_Julio.resx">
-      <DependentUpon>UC_Julio.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

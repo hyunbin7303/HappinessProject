@@ -14,7 +14,7 @@
                     <Label x:Name="lab_mainwork" Width="200" FontSize="20" FontFamily="Arial"></Label>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
-                    <Label Content="Start Date : " FontSize="20" FontFamily="Arial"></Label>
+                    <Label Content="Project Start Date : " FontSize="20" FontFamily="Arial"></Label>
                     <Label x:Name="lab_startDate" Width="200" FontSize="20" FontFamily="Arial"></Label>
                 </StackPanel>
 
@@ -27,17 +27,19 @@
                     <Label Content="Description" FontSize="20" FontFamily="Arial"></Label>
                     <TextBlock x:Name="txtBlock_Description" FontSize="12">
                     </TextBlock>
-                    <TextBox Height="50" Width="200"
+                    <TextBox Height="30" Width="200"
                         TextWrapping="Wrap"
                         AcceptsReturn="True"
                         HorizontalScrollBarVisibility="Disabled"
                         VerticalScrollBarVisibility="Auto"/>
                 </StackPanel>
+                <Button x:Name="Btn_Start" Content="START" Margin="10" FontSize="20" Width="150" Click="Btn_Start_Click"></Button>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button x:Name="Btn_Start" Content="START" Margin="10" Width="100" Click="Btn_Start_Click"></Button>
-                    <Button x:Name="Btn_SetUpNextPlan" FontSize="20" Width="150" Content="Next Plan" Margin="10" Click="Btn_SetUpNextPlan_Click"></Button>
-                    <Button x:Name="Btn_Close" FontSize="20" Width="150" Content="Close" Margin="10" Click="Btn_Close_Click"></Button>
+                    <Button x:Name="Btn_ResultReport" FontSize="20" Width="200" Content="Result Report" Margin="10" Click="Btn_ResultReport_Click" ></Button>
+                    <Button x:Name="Btn_TaskResult" FontSize="20" Width="150" Content="Task Result" Margin="10" ></Button>
                 </StackPanel>
+                <Button x:Name="Btn_Close" FontSize="20" Width="150" Content="Close" Margin="10" Click="Btn_Close_Click"></Button>
+
             </StackPanel>
         </Border>
     </Grid>
