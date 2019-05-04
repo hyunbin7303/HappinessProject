@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
-
+using System.Xml;
 
 namespace DdSetting
 {
@@ -123,6 +123,74 @@ namespace HappinessProject
             }
             return Tasks;
         }
+
+        public IList<DailyLife> DisplayDailyLife(int userID)
+        {
+            List<DailyLife> dailyLives = new List<DailyLife>();
+            try
+            {
+                conn.Open(); // Check for stored procedure is working or not.
+                string sql = "SELECT * FROM Proc_DisplayTaskInfo(" + userID + ")"; // Need to make a stored procedure for this one.
+                NpgsqlCommand command = new NpgsqlCommand(sql, conn);
+                NpgsqlDataReader dr = command.ExecuteReader();
+                while (dr.Read())
+                {
+                    DailyLife daily = new DailyLife();
+                    dailyLives.Add(daily);
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex.ToString());
+            }
+            return dailyLives;
+        }
+
+
+        // Generate only today information temporary.
+        public bool StoreTodayData(User user, List<Task> todayTasks)
+        {
+            //Getting Today Date.
+            DateTime date = DateTime.Today;
+            DailyLife dailyLife = new DailyLife();
+            string dateStr = date.ToShortDateString();
+            try
+            {
+                using (XmlWriter writer = XmlWriter.Create(dateStr))
+                {
+                    writer.WriteStartElement(dateStr);
+                    foreach(Task task in todayTasks)
+                    {
+                        writer.WriteElementString("username", user.FirstName + " - " + user.LastName);
+                        writer.WriteElementString("Task", user.FirstName + " - " + user.LastName);
+                        writer.WriteElementString("username", user.FirstName + " - " + user.LastName);
+                    }
+
+                }
+            }catch(Exception ex)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool TodayTaskInfoGenerate(Task oneTask)
+        {
+            DateTime date = DateTime.Now;
+            string FileName = "Task" + date.Day + ".xml";
+            using (XmlWriter writer = XmlWriter.Create(FileName))
+            {
+                writer.WriteStartDocument();
+                writer.WriteStartElement("Task" + oneTask.task_name);
+                writer.WriteElementString("Name", oneTask.task_name);
+                writer.WriteElementString("Score", oneTask.score.ToString());
+                writer.WriteEndElement();
+                writer.WriteEndDocument();
+            }
+            return true;
+        }
+
 
         public bool insertTask(Models.Task newTask)
         {

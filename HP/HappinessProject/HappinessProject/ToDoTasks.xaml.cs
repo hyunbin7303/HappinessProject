@@ -17,28 +17,14 @@ using System.Windows.Shapes;
 namespace HappinessProject
 {
     /// <summary>
-    /// Interação lógica para UserControlInicio.xam
+    /// Interaction logic for ToDoTasks.xaml
     /// </summary>
-    public partial class MainDashboard : UserControl
+    public partial class ToDoTasks : UserControl
     {
-        public MainDashboard()
+        public ToDoTasks()
         {
             InitializeComponent();
             DataContext = new MainDashViewModel();
-        }
-
-        private void Btn_Detail(object sender, RoutedEventArgs e)
-        {
-        }
-        private string getDate ()
-        {
-            string tdDate = String.Empty;
-            tdDate = DateTime.Today.ToString("MMMM dd yyyy");
-            return tdDate;
-        }
-
-        private void Rectangle_MouseDown(object sender, MouseButtonEventArgs e)
-        {
 
         }
 
@@ -46,8 +32,8 @@ namespace HappinessProject
         {
             var item = (ListBox)sender;
             var selectedTask = (Models.Task)item.SelectedItem;
-            SpecificDayCheck specificDayWidnow = new SpecificDayCheck(selectedTask);
-            specificDayWidnow.Show();
+            StartTask taskStart = new StartTask(selectedTask);
+            taskStart.Show();
         }
     }
 }

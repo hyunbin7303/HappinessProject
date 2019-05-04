@@ -27,6 +27,16 @@ namespace HappinessProject.Models
         public string LastName { get; set; }
         public string user_description { get; set; }
         public Address address { get; set; } // Primary Address
+
+        public User()
+        {
+            user_id = 0;
+            FirstName = "";
+            LastName = "";
+            user_description =  "";
+            address = new Address();
+        }
+
         public string FullName
         {
             get

@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="HappinessProject.MainDashboard"
+﻿<UserControl x:Class="HappinessProject.ToDoTasks"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -15,7 +15,7 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Row="0" Margin="0,0,10,10">
-                    <ListBox Name="lb_Tasks"  ItemsSource="{Binding  dailyCollection}"  Background="LightBlue" SelectionChanged="lb_Tasks_SelectionChanged">
+                    <ListBox Name="lb_Tasks"  ItemsSource="{Binding  taskCollection}"  Background="LightBlue" SelectionChanged="lb_Tasks_SelectionChanged">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel >

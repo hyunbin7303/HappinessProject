@@ -11,6 +11,8 @@ namespace HappinessProject.ViewModels
     public class MainDashViewModel : NotificationClass
     {
         public List<Task> taskCollection { get; set; }
+        public List<DailyLife> dailyCollection { get; set; }
+
         Business business;
         public EventHandler ShowMessageBox = delegate { };
         public MainDashViewModel()
@@ -19,6 +21,11 @@ namespace HappinessProject.ViewModels
             GetDailyTask();
         }
 
+        public void GetDailyInfo()
+        {
+            DAL dal = new DAL();
+            dailyCollection = dal.DisplayDailyLife().ToList();
+        }
 
         public void GetDailyTask()
         {

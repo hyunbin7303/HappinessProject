@@ -101,13 +101,20 @@
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\DailyLife.cs" />
     <Compile Include="ResultReport.xaml.cs">
       <DependentUpon>ResultReport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpecificDayCheck.xaml.cs">
+      <DependentUpon>SpecificDayCheck.xaml</DependentUpon>
     </Compile>
     <Compile Include="StartTask.xaml.cs">
       <DependentUpon>StartTask.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExampleTesting\AsyncTest.cs" />
+    <Compile Include="ToDoTasks.xaml.cs">
+      <DependentUpon>ToDoTasks.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModels\ComboBoxViewModel.cs" />
     <Compile Include="DataContextSampleTest.xaml.cs">
       <DependentUpon>DataContextSampleTest.xaml</DependentUpon>
@@ -128,12 +135,6 @@
     </Compile>
     <Compile Include="PrivateSetting.xaml.cs">
       <DependentUpon>PrivateSetting.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ScoreTracker.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ScoreTracker.Designer.cs">
-      <DependentUpon>ScoreTracker.cs</DependentUpon>
     </Compile>
     <Compile Include="Detail.xaml.cs">
       <DependentUpon>Detail.xaml</DependentUpon>
@@ -173,6 +174,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ResultReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SpecificDayCheck.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -232,6 +237,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ToDoTasks.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewModels\MainSomething.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -258,9 +267,6 @@
     <EmbeddedResource Include="GoalViewDetail.resx">
       <DependentUpon>GoalViewDetail.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ScoreTracker.resx">
-      <DependentUpon>ScoreTracker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

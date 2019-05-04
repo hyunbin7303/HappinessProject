@@ -49,7 +49,7 @@ namespace HappinessProject
                     break;
                 case 1:
                     GridPrincipal.Children.Clear();
-                    GridPrincipal.Children.Add(new ToDolist());
+                    GridPrincipal.Children.Add(new ToDoTasks());
                     break;
                 case 2:
                     GridPrincipal.Children.Clear();

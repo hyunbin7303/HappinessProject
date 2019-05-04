@@ -1,0 +1,34 @@
+2019 information
+1. Date Time display
+2. Todo information Display
+Task name or ID  - Score
+Breakdance - 50
+Programming - 70
+
+
+
+
+2019-3-20
+Task - breakdance : score - 40
+Task - hiking: score - 40
+Task - breakdance : score - 40
+Sum = 120 / 
+
+2019-3-21
+Task - breakdance : score - 40
+Task - hiking: score - 40
+Task - breakdance : score - 40
+
+
+2019-3-22
+Task - breakdance : score - 40
+Task - hiking: score - 40
+Task - breakdance : score - 40
+
+
+2019-3-23
+Task - breakdance : score - 40
+Task - hiking: score - 40
+Task - breakdance : score - 40
+
+https://www.datacamp.com/community/tutorials/materialized-views-postgresql

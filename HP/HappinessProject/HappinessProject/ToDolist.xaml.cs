@@ -41,20 +41,18 @@ namespace HappinessProject
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ScoreTracker breakdance = new ScoreTracker();
-            breakdance.Show();
+            StartTask startTaskWindow = new StartTask();
+            startTaskWindow.Show();
         }
 
         private void Btn_Second(object sender, RoutedEventArgs e)
         {
-            ScoreTracker programming = new ScoreTracker();
-            programming.Show();
+            StartTask startTaskWindow = new StartTask();
+            startTaskWindow.Show();
         }
 
         private void Btn_Third(object sender, RoutedEventArgs e)
         {
-            ScoreTracker reading = new ScoreTracker();
-            reading.Show();
         }
     }
 }
