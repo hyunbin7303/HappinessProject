@@ -8,9 +8,6 @@ using System.Threading.Tasks;
 namespace HappinessProject.ViewModels
 {
 
-   // BindableCollection is part of Caliburn.Micro .
-  //  public BindableCollection<UserModel> People { get; set; }
-
     public class UserViewModel
     {
     }

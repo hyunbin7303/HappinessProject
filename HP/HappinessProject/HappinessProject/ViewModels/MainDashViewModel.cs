@@ -24,13 +24,16 @@ namespace HappinessProject.ViewModels
         public void GetDailyInfo()
         {
             DAL dal = new DAL();
-            dailyCollection = dal.DisplayDailyLife().ToList();
+            dailyCollection = dal.DisplayDailyLife(1).ToList();
         }
 
         public void GetDailyTask()
         {
             DAL dal = new DAL();
-            taskCollection = dal.TaskSelection().ToList();
+
+            // get daily Collection
+            
+            //taskCollection = dal.DisplayDailyLife(1).ToList();
         }
 
 

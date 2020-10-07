@@ -41,7 +41,7 @@ namespace HappinessProject
         private static string connectionString = string.Format("Server={0};Port={1};" +
         "User Id={2};Password={3};Database={4};",
         "localhost", "5432", "postgres",
-        "Conestoga1", "HPdb");
+        "Cc7594435", "HPdb");
         public NpgsqlConnection conn = new NpgsqlConnection(connectionString);
         public IList<User> userDisplay()
         {
@@ -93,7 +93,6 @@ namespace HappinessProject
                 reader.Close();
             }
         }
-
 
         public IList<Task> TaskSelection()
         {

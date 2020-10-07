@@ -19,15 +19,15 @@
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel >
-                                    <TextBlock FontFamily="Arial Black" FontSize="15" Text="{Binding Path=taskID}" />
-                                    <TextBlock FontFamily="Arial Black" FontSize="15" Text="{Binding Path=task_name}"/>
-                                    <TextBlock FontFamily="Arial Black" FontSize="15" Text="{Binding Path=description}"/>
-                                    <StackPanel Orientation="Horizontal">
+                                    <TextBlock FontFamily="Arial Black" FontSize="15" Text="{Binding Path=userID}" />
+                                    <TextBlock FontFamily="Arial Black" FontSize="15" Text="{Binding Path=dateStr}"/>
+                                    <TextBlock FontFamily="Arial Black" FontSize="15" Text="{Binding Path=DailyScore}"/>
+                                    <!--<StackPanel Orientation="Horizontal">
                                         <TextBlock FontFamily="Arial Black" FontSize="15" Text="{Binding Path=startDate}"/>
-                                        <Label Content="-----"/>
+                                        <Label Content="" />
                                         <TextBlock FontFamily="Arial Black" FontSize="15" Text="{Binding Path=endDate}"/>
-                                    </StackPanel>
-                                    <TextBlock Foreground="Blue" FontFamily="Arial Black" FontSize="20" Text="{Binding Path=score}"/>
+                                    </StackPanel>-->
+                                    <!--<TextBlock Foreground="Blue" FontFamily="Arial Black" FontSize="20" Text="{Binding Path=score}"/>-->
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>

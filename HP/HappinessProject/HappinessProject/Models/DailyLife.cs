@@ -18,10 +18,11 @@ namespace HappinessProject.Models
         public int Daily { get; set; }
         public int userID { get; set; }
         public User userInfo { get; set; }
-        public List<int> TaskID { get; set; } // all task information that user has. 
+        public List<Task> TaskID { get; set; } // all task information that user has. 
         public DailyLife()
         {
             userInfo = new User();
+
         }
     }
 }
